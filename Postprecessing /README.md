@@ -44,25 +44,15 @@ This folder contains the following:
     - generate input list for measurement crawl
 
 
-### Analyzing Results of the Measurement Crawls
+### Analyzing Results of the Measurement Crawls 
 
 - `crawl_results_fingerprinting/` - Directory for the measurements crawl results to be analyzed. *Please note that the result data has to be post-processed before analysis. See the crawler-repository for details on that*.
 - `FingerprintingCrawlAnalysis.ipynb` - notebook for analyzing the fingerprinting crawl
-    - get statistics
-    - generate graphs
-    - generate various samples for validation
-    - do the fingerprinting classification
+  
 
 
-### Deeper Analysis / Interpretation
 
-- `SingleAttributeCombinationAnalysis.ipynb` - Notebook for getting more insights regarding on specific combination of transmitted fingerprinting attributes
-- `SinglePageAnalysis.ipynb` - Notebook for getting detailed insights into the fingerprinting activity on a specific website
-- `SinglePageAnalysisTargeted.ipynb` - Same as above but allows to set more filters to get information on specific flows you have identified as interesting
+### Analyzing Results of the Measurement Crawls 
 
-
-### Validation
-
-Most files/directories with `sample` or `entry_sheet` in their name belong to various validation attempts further described in the thesis.
-
-These files are generally automatically sampled/generated from the two main Python notebooks, are manually created or combination of both.
+- `crawl_results_Donothing/` - Directory for the donothing crawl results to be analyzed. *Please note that the result data has to be post-processed before analysis. See the crawler-repository for details on that*.
+- `Donohting.ipynb` - notebook for analyzing the fingerprinting crawl
