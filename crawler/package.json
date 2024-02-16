@@ -1,0 +1,31 @@
+{
+  "name": "playwright-fingerprint-consent",
+  "version": "1.0.0",
+  "description": "Automate crawls to collect data on user consent and fingerprinting",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "consentscan": "node --max-old-space-size=8192 consentscan",
+    "postprocessing": "node --max-old-space-size=8192 postprocessing/postprocessing",
+    "compress": "bash postprocessing/compressResultFiles.sh",
+    "DonothingPost": "node --max-old-space-size=162840 postprocessing/postprocessingDonothing",
+    "postinstall": "patch-package"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.wdf.sap.corp/I544275/playwright-fingerprint-consent"
+  },
+  "author": "Lukas Hock",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^10.1.0",
+    "glob": "^8.0.3",
+    "mktemp": "^1.0.0",
+    "node-stream-zip": "^1.15.0",
+    "objects-to-csv": "^1.3.6",
+    "parse-domain": "^7.0.1",
+    "patch-package": "^6.4.7",
+    "playwright": "1.21.1",
+    "yargs": "^17.5.1"
+  }
+}

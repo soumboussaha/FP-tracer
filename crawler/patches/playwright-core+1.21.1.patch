@@ -1,0 +1,69 @@
+diff --git a/node_modules/playwright-core/lib/server/firefox/ffConnection.js b/node_modules/playwright-core/lib/server/firefox/ffConnection.js
+index 3b03a40..88ed2a2 100644
+--- a/node_modules/playwright-core/lib/server/firefox/ffConnection.js
++++ b/node_modules/playwright-core/lib/server/firefox/ffConnection.js
+@@ -244,7 +244,23 @@ class FFSession extends _events.EventEmitter {
+       if (object.error) callback.reject(createProtocolError(callback.error, callback.method, object.error));else callback.resolve(object.result);
+     } else {
+       (0, _utils.assert)(!object.id);
+-      Promise.resolve().then(() => this.emit(object.method, object.params));
++      Promise.resolve().then(() => {
++        try{
++          this.emit(object.method, object.params)
++        } catch (e) {
++          console.warn('##################################################################################')
++          console.warn('##################################################################################')
++          console.warn('## Warning: Encountered error within playwright (ffConnection::dispatchMessage) ##')
++          console.warn(url)
++          console.warn('##################################################################################')
++          console.warn('##################################################################################')
++          console.warn('origError:')
++          console.warn('##################################################################################')
++          console.warn(e)
++          console.warn('##################################################################################')
++          console.warn('##################################################################################')
++        } 
++      });
+     }
+   }
+ 
+diff --git a/node_modules/playwright-core/lib/server/frames.js b/node_modules/playwright-core/lib/server/frames.js
+index 374fc65..682ad73 100644
+--- a/node_modules/playwright-core/lib/server/frames.js
++++ b/node_modules/playwright-core/lib/server/frames.js
+@@ -166,6 +166,7 @@ class FrameManager {
+   }
+ 
+   frameCommittedNewDocumentNavigation(frameId, url, name, documentId, initial) {
++    try {
+     const frame = this._frames.get(frameId);
+ 
+     this.removeChildFramesRecursively(frame);
+@@ -223,6 +224,27 @@ class FrameManager {
+ 
+ 
+     frame.setPendingDocument(keepPending);
++
++    } catch (e) {
++        console.warn('#######################################################################################################')
++        console.warn('#######################################################################################################')
++        console.warn('## Warning: Encountered error within playwright (FrameManager::frameCommittedNewDocumentNavigation) ##')
++        console.warn(url)
++        console.warn('#######################################################################################################')
++        console.warn('#######################################################################################################')
++        console.warn('_frames:')
++        console.warn('#######################################################################################################')
++        console.warn(this._frames)
++        console.warn('#######################################################################################################')
++        console.warn('#######################################################################################################')
++        console.warn('origError:')
++        console.warn('#######################################################################################################')
++        console.warn(e)
++        console.warn('#######################################################################################################')
++        console.warn('#######################################################################################################')
++      }
++
++
+   }
+ 
+   frameCommittedSameDocumentNavigation(frameId, url) {

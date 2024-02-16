@@ -1,0 +1,137 @@
+[
+    {
+        "pageUrl": "google.com",
+        "usedUrl": "https://google.com",
+        "fullUrl": "https://www.google.com/",
+        "hasBanner": true,
+        "cmp": "google_popup"
+    },
+    {
+        "pageUrl": "gtld-servers.net",
+        "error": "Could not reach Url with any alternative. Error: page.goto: NS_ERROR_UNKNOWN_HOST\n=========================== logs ===========================\nnavigating to \"http://www.gtld-servers.net/\", waiting until \"load\"\n============================================================"
+    },
+    {
+        "pageUrl": "netflix.com",
+        "usedUrl": "https://netflix.com",
+        "fullUrl": "https://www.netflix.com/de-en/",
+        "hasBanner": true,
+        "cmp": "onetrust_pctab"
+    },
+    {
+        "pageUrl": "facebook.com",
+        "usedUrl": "https://facebook.com",
+        "fullUrl": "https://www.facebook.com/",
+        "hasBanner": true,
+        "cmp": "Facebook"
+    },
+    {
+        "pageUrl": "youtube.com",
+        "usedUrl": "https://youtube.com",
+        "fullUrl": "https://www.youtube.com/",
+        "hasBanner": true,
+        "cmp": "google_popup"
+    },
+    {
+        "pageUrl": "akamaiedge.net",
+        "error": "Could not reach Url with any alternative. Error: page.goto: NS_ERROR_UNKNOWN_HOST\n=========================== logs ===========================\nnavigating to \"http://www.akamaiedge.net/\", waiting until \"load\"\n============================================================"
+    },
+    {
+        "pageUrl": "akamai.net",
+        "error": "Could not reach Url with any alternative. Error: page.goto: NS_ERROR_UNKNOWN_HOST\n=========================== logs ===========================\nnavigating to \"http://www.akamai.net/\", waiting until \"load\"\n============================================================"
+    },
+    {
+        "pageUrl": "twitter.com",
+        "usedUrl": "https://twitter.com",
+        "fullUrl": "https://twitter.com/",
+        "hasBanner": true,
+        "cmp": "Twitter"
+    },
+    {
+        "pageUrl": "instagram.com",
+        "usedUrl": "https://instagram.com",
+        "fullUrl": "https://www.instagram.com/accounts/login/",
+        "hasBanner": false
+    },
+    {
+        "pageUrl": "microsoft.com",
+        "usedUrl": "https://microsoft.com",
+        "fullUrl": "https://www.microsoft.com/de-de/",
+        "hasBanner": false
+    },
+    {
+        "pageUrl": "sap.de",
+        "usedUrl": "https://sap.de",
+        "fullUrl": "https://www.sap.com/germany/index.html",
+        "hasBanner": true,
+        "cmp": "trustarcbar"
+    },
+    {
+        "pageUrl": "spiegel.de",
+        "usedUrl": "https://spiegel.de",
+        "fullUrl": "https://www.spiegel.de/",
+        "hasBanner": true,
+        "cmp": "sourcepointpopup"
+    },
+    {
+        "pageUrl": "amazon.de",
+        "usedUrl": "https://amazon.de",
+        "fullUrl": "https://www.amazon.de/",
+        "hasBanner": false
+    },
+    {
+        "pageUrl": "t-online.de",
+        "usedUrl": "https://t-online.de",
+        "fullUrl": "https://www.t-online.de/",
+        "hasBanner": true,
+        "cmp": "sourcepointpopup"
+    },
+    {
+        "pageUrl": "sap.com",
+        "usedUrl": "https://sap.com",
+        "fullUrl": "https://www.sap.com/index.html",
+        "hasBanner": false
+    },
+    {
+        "pageUrl": "bund.de",
+        "usedUrl": "https://bund.de",
+        "fullUrl": "https://verwaltung.bund.de/",
+        "hasBanner": false
+    },
+    {
+        "pageUrl": "ebay.de",
+        "usedUrl": "https://ebay.de",
+        "fullUrl": "https://www.ebay.de/",
+        "hasBanner": false
+    },
+    {
+        "pageUrl": "postbank.de",
+        "usedUrl": "https://postbank.de",
+        "fullUrl": "https://www.postbank.de/",
+        "hasBanner": false
+    },
+    {
+        "pageUrl": "welt.de",
+        "usedUrl": "https://welt.de",
+        "fullUrl": "https://www.welt.de/",
+        "hasBanner": true,
+        "cmp": "sourcepointpopup"
+    },
+    {
+        "pageUrl": "deutsche-bank.de",
+        "usedUrl": "https://deutsche-bank.de",
+        "fullUrl": "https://www.deutsche-bank.de/pk.html",
+        "hasBanner": false
+    },
+    {
+        "pageUrl": "ebay-kleinanzeigen.de",
+        "usedUrl": "https://ebay-kleinanzeigen.de",
+        "fullUrl": "https://www.ebay-kleinanzeigen.de/",
+        "hasBanner": false
+    },
+    {
+        "pageUrl": "h-ka.de",
+        "usedUrl": "https://www.h-ka.de",
+        "fullUrl": "https://www.h-ka.de/",
+        "hasBanner": false
+    }
+]
