@@ -1,0 +1,4 @@
+[submodule "submodule_dir"]
+	path = submodule_dir
+	url = https://github.com/SAP/project-foxhound.git
+	branch = primitaint
