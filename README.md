@@ -1,4 +1,4 @@
-]\
+
 # FP-tracer Artifact Release
 
 This directory presents the tools for the artifact release for FP-tracer, submitted to POpets 24.
