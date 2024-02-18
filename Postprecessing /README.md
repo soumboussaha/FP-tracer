@@ -12,10 +12,6 @@ This folder contains the following:
     - ...analyzing crawl results
     - ...creating graphs
 
-> If you are just looking for the main results of the thesis and how
-> they are calculated, go to `FingerprintingCrawlAnalysis.ipynb`.
-> This notebooks contains most of the results and graph generation.
-
 
 ## General Directories and Files
 
@@ -28,13 +24,13 @@ This folder contains the following:
 ## Most important files by phase
 
 
-### Preparing a Filter Crawl
+### Preparing a Filter Crawl ( if consent banner interaction is in scope )
 
 - `tranco_top-1m_N7QVW_2022-10-07.csv`- the original Tranco list of popular websites
 - `TrancoOps.ipynb` - Notebook for processing the tranco list and generating an input file for the filter crawl
 
 
-### Analyzing Results of Filter Crawl and Preparing Measurement Crawl
+### Analyzing Results of Filter Crawl and Preparing Measurement Crawl( if consent banner interaction is in scope )
 
 - `crawl_results_filter/` - Directory for the filter crawl results to be analyzed
 - `crawl_results_filter/results.json` - the main results file from the filter crawl
@@ -44,7 +40,7 @@ This folder contains the following:
     - generate input list for measurement crawl
 
 
-### Analyzing Results of the Measurement Crawls 
+### Analyzing Results of the Measurement Crawls ( if conset banner is in scope ) 
 
 - `crawl_results_fingerprinting/` - Directory for the measurements crawl results to be analyzed. *Please note that the result data has to be post-processed before analysis. See the crawler-repository for details on that*.
 - `FingerprintingCrawlAnalysis.ipynb` - notebook for analyzing the fingerprinting crawl
@@ -52,7 +48,7 @@ This folder contains the following:
 
 
 
-### Analyzing Results of the Measurement Crawls 
+### Analyzing Results of a crawl wihtout consent banner 
 
 - `crawl_results_Donothing/` - Directory for the donothing crawl results to be analyzed. *Please note that the result data has to be post-processed before analysis. See the crawler-repository for details on that*.
 - `Donohting.ipynb` - notebook for analyzing the fingerprinting crawl
