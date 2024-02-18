@@ -13,14 +13,14 @@ This directory presents the tools for the artifact release for FP-tracer, submit
 ## Instructions
 
 ### Crawler
-The `crawler` directory contains the code for crawling. Follow the instructions provided in the `crawler` directory to run crawls with different profiles to interact with conset banners or ignore the banner.
+The `crawler` directory contains the code for crawling. Follow the instructions provided in the `crawler` directory to run crawls with different profiles to interact with consent banners either by : Accepting , rejecting or ignoring the banner .
 
 ### Foxhound
-The `foxhound` directory contains a link to the maintained Foxhound project used in this project. to use a diffirent browser you can change the browser in the crawler repository . 
+The `foxhound` directory contains a link to the maintained Foxhound project branch used in this project. to use a diffirent browser you can change the browser binary  in the crawler repository details are explained in the crawler directory. 
 
 ### Post Processing
-The `post_processing` contains sample python scripts to read and visualize crawling reports, you can use these as abaseline to write your own scripts to analyse the crawl ouptuts.
+The `post_processing` contains sample python scripts to read and visualize crawling reports, you can use these as a baseline to visiual basic reposts and then write your own scripts to analyse the crawl ouptuts based on your own needs. feel free to use diffirent scripts also , using the sample scripts we provide is not mandatory. 
 
 ### Dataset
-The `dataset` directory contains a set of detected attribute combinations and their associated entropies.
+The `dataset` directory contains a set of detected attribute combinations and their associated entropies. 
 
