@@ -1,28 +1,7 @@
-# `data/`
-
-This folder contains the following:
-
-- Popular website lists
-- Post-processed crawl data
-- Manually collected validation data
-- Python-Notebooks for...
-    - ...generating crawler input
-    - ...creating entry sheets for manual validation
-    - ...analyzing manual validation
-    - ...analyzing crawl results
-    - ...creating graphs
-
-
-## General Directories and Files
-
-- `images/` - Output directory for graphs generated using Matplotlib
-- `tables/` - Output directory for LaTeX source code for tables of graph data
-- `thesis.mplstyle` - Matplotlib style file for setting graph appearance
-- `common.py` - Shared code for the notebooks. Mainly contains helper functions and formatting. **Also contains the fingerprinting classification rule**.
-
+In this directory a sample of Jupyter notebook scripts that illustrate how the output data of the crawl could be visualized. 
+using these scripts is not mandatory, Feel free to write your script to visual data and process it. we add a few samples here as it could be useful to get a sense of what the data looks like. 
 
 ## Most important files by phase
-
 
 ### Preparing a Filter Crawl ( if consent banner interaction is in scope )
 
@@ -40,15 +19,14 @@ This folder contains the following:
     - generate input list for measurement crawl
 
 
-### Analyzing Results of the Measurement Crawls ( if conset banner is in scope ) 
+### Analyzing Results of the Measurement Crawls ( if consent banner is in scope ) 
 
 - `crawl_results_fingerprinting/` - Directory for the measurements crawl results to be analyzed. *Please note that the result data has to be post-processed before analysis. See the crawler-repository for details on that*.
 - `FingerprintingCrawlAnalysis.ipynb` - notebook for analyzing the fingerprinting crawl
   
 
 
+### Analyzing Results of a crawl without Consent banner 
 
-### Analyzing Results of a crawl wihtout consent banner 
-
-- `crawl_results_Donothing/` - Directory for the donothing crawl results to be analyzed. *Please note that the result data has to be post-processed before analysis. See the crawler-repository for details on that*.
+- `crawl_results_Donothing/` - Directory for the do-nothing crawl results to be analyzed. *Please note that the result data has to be post-processed before analysis. See the crawler-repository for details on that*.
 - `Donohting.ipynb` - notebook for analyzing the fingerprinting crawl
