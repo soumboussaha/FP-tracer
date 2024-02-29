@@ -1,6 +1,4 @@
-> **This repository is part of collection of repositories created as part of the master's thesis**
-> **"The Impact of User Consent on Browser Fingerprinting".**
-> [**You can find an overview of related repositories here**](https://github.wdf.sap.corp/I544275/fingerprinting-consent-overview).
+> **This repository is part of collection of repositories created as part of FP-tracer**
 
 # playwright-fingerprint-consent
 
@@ -59,9 +57,9 @@ Examples:
   npm run consentscan -- --list             scan all pages in "exampleURLs" and
   exampleURLs -v -o results.json            output results to "results.json"
 
-Do not forget the "--" before the parameters. Otherwise they will not be passed
+Do not forget the "--" before the parameters. Otherwise, they will not be passed
 to the script by npm run.
-You can also set parameters using environment variables of form
+You can also set parameters using environment variables of the form
 CONSENTSCAN_[parameterName]
 ```
 
@@ -82,7 +80,7 @@ Please be aware of the following points when running the application via docker:
 - The application will always output to a file
   - The file's internal path will be `/app/output/results.json`
   - Use a bind mount to access the file; e.g. `-v "$(pwd)/output:/app/output"`
-- Outputting to console is not available
+- Outputting to the console is not available
 
 
 ### Building the Container
@@ -105,25 +103,25 @@ sudo docker run -v "$(pwd)/output:/app/output" fingerprint-consent-docker  -l ex
 ```
 
 
-## Master's Thesis Information
+## Information
 
 ### Crawled Websites
 
-The thesis will be based on the [Tranco List #N7QVW](https://tranco-list.eu/list/N7QVW/100000). We will use the top 100k websites on it.
+The paper is based on the [Tranco List #N7QVW](https://tranco-list.eu/list/N7QVW/100000). We targeted the top 100k websites on it.
 
 This list has already been prepared in the required format and is provided as part of this repository at [tranco/tranco_top-100k_N7QVW_2022-10-07](tranco/tranco_top-100k_N7QVW_2022-10-07).
 It can be used as the input for the crawl by specifying `-l tranco/tranco_top-100k_N7QVW_2022-10-07`.
 
-### Filter Crawl
+### Filter Crawl ( consent banner in scope) 
 
 The first crawl will be a filter crawl to determine, which websites possess a consent banner compatible with consent-o-matic. This crawl will also filter  any unreachable or invalid websites.
 
-To run this first crawl, excute the following command:
+To run this first crawl, execute the following command:
 ```
 npm run consentscan -- --list tranco/tranco_top-100k_N7QVW_2022-10-07  -o tranco-top100k_filter-scan_results.json -c 10 -b 10
 ```
 
-This will crawl all 100k pages. It will use `10` workers (`-c`) and do a backup after every `10` successsfull pages crawled (`-b`). You can modify those parameters if needed.
+This will crawl all 100k pages. It will use `10` workers (`-c`) and do a backup after every `10` successful pages crawled (`-b`). You can modify those parameters if needed.
 
 **Warning:** If you increase the concurrency by to much, some websites might not be reachable because of missing resources.
 No specific error messages will be generated in this case, making this problem hard to recognize.
@@ -133,7 +131,7 @@ On a simple dev machine, 10 workers were running fine.
 
 You can also do this crawl using Docker
 
-First build the image
+First, build the image
 ```
 sudo docker build --tag fingerprint-consent-docker .
 ```
@@ -148,15 +146,15 @@ Backup and recovery will still work.
 
 In a local test, 10 pages required about 40s of crawling time.
 This would give an estimate of 400,000s = 6666m = 111h = 4.6d of runtime for the full crawl.
-This of cource can change depending on the resources of the crawler and specificy of the websites.
+This of course can change depending on the resources of the crawler and specifically of the websites.
 
-### Measurement Crawl
+### Measurement Crawl ( consent banner in score )
 
-The measurement crawl will access each page with a compatible consent banner 3 times. Each time using a different consent-action (do-nothing, accept-all, reject-all).
+The measurement crawl will access each page with a compatible consent banner 3 times. Each time use a different consent-action (do-nothing, accept-all, reject-all).
 
 Use the following commands to start the crawl.
 
-First build the image
+First, build the image
 ```
 sudo docker build --tag fingerprint-consent-docker .
 ```
@@ -169,18 +167,18 @@ sudo docker run -it -v "$(pwd)/output:/app/output" fingerprint-consent-docker -m
 A few notes about the used flags:
 
 - `-m fingerprinting` specifies that the fingerprinting/main crawls should be executed; not the filter-crawl again
-- `-c 12` is the concurrency / number of workers. It can prbably be set to slightly below the number of cores
+- `-c 12` is the concurrency/number of workers. It can probably be set to slightly below the number of cores
 - `-b 10` is the number of results per backup file. `10` should be fine
-- `-x` will cause the backup files not to be joined in the end. furthermore the RAM will be cleared once results are written to backup files. this flag should be set because of the higher amount of data in the fingerprinting crawl
+- `-x` will cause the backup files not to be joined in the end. furthermore, the RAM will be cleared once results are written to backup files. this flag should be set because of the higher amount of data in the fingerprinting crawl
 - `-l tranco/tranco_top-100k_N7QVW_2022-10-07_with_cmp` is the list of domains for the main crawl. It was created by evaluating the results from the first filter crawl
 
-### Donothing Crawl
+### Donothing Crawl ( simple crawl without accounting for consent banners ) 
 
-Similar to The measurement crawl but Donothing will access each page regardless of the compatiblity wiht the consent banner once with the consent-action do-nothing.
+Similar to The measurement crawl, Donothing will access each page regardless of the compatibility with the consent banner once with the consent-action do-nothing.
 
 Use the following commands to start the crawl.
 
-First build the image
+First, build the image
 ```
 sudo docker build --tag fingerprint-consent-docker .
 ```
@@ -195,14 +193,14 @@ A few notes about the used flags:
 - `-m donothing` specifies that the fingerprinting/main crawls should be executed; not the filter-crawl again
 - `-c 12` is the concurrency / number of workers. It can prbably be set to slightly below the number of cores
 - `-b 10` is the number of results per backup file. `10` should be fine
-- `-x` will cause the backup files not to be joined in the end. furthermore the RAM will be cleared once results are written to backup files. this flag should be set because of the higher amount of data in the fingerprinting crawl
-- `-l tranco/tranco_top-100k_N7QVW_2022-10-07` is the list of domains for the main crawl. this is the inital list and does not require a prior crawl
+- `-x` will cause the backup files not to be joined in the end. furthermore, the RAM will be cleared once results are written to backup files. this flag should be set because of the higher amount of data in the fingerprinting crawl
+- `-l tranco/tranco_top-100k_N7QVW_2022-10-07` is the list of domains for the main crawl. this is the initial list and does not require a prior crawl
 
 ### Postprocessing
 
 The data generated by the measurement crawl is nested and thus difficult to analyze directly using tools like Pandas.
-The postprocessing will analyze all result files from the measurement crawl and generate flat files which can be analyzed more easily.
-It also contains logic to categorize errors, determine hosts and do other cleanup.
+The postprocessing will analyze all result files from the measurement crawl and generate flat files that can be analyzed more easily.
+It also contains logic to categorize errors, determine hosts, and do other cleanup.
 
 To use the postprocessing, do the following:
 - put all files into the postprocessing input folders
@@ -211,10 +209,10 @@ To use the postprocessing, do the following:
     - Other files like logs and the `currentWorkerStatus.json` file are not part of the postprocessing procedure
 - run `npm run postprocessing` to do the postprocessing. New folders with the output files will appear.
 - run `npm run compress` to gzip some of the larger output files (optional)
-- run  `npm run DonothingPost` to do the Post processing for the Donothing crawl mode.
+- run  `npm run DonothingPost` to do the Post-processing for the Donothing crawl mode.
 
 Postprocessing is designed to run locally. It has not been tested in containerized environments.
 
-## Crawl Data
+If you want to extract other data from the raw data collected by the crawl, that is not extracted by the current Posprocessing code you will have to update the Posprocessing script, the code is fairly easy to browse, so don't hesitate to reach out to us for assistance. 
 
-The crawl data generaated as part of the thesis is available inside a [release in this repository](https://github.wdf.sap.corp/WebSecResearch/playwright-fingerprint-consent/releases/tag/thesis-final).
+
