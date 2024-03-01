@@ -12,7 +12,6 @@ This directory presents the tools for the artifact release for FP-tracer, submit
 
 
 
--------------------------- This section is added to facilitate the artifact evaluation. 
 # Artifact Appendix
 
 Paper title: **FP-tracer: Fine-grained Browser Fingerprinting Detection via Taint-tracking and Multi-level Entropy-based Thresholds**
