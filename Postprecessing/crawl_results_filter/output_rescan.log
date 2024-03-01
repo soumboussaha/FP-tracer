@@ -1,0 +1,1736 @@
+running tests with auto-restart
+only use this, if output is set to output/* (default for docker)
+using parameters -o output/results.json --list tranco/filterCrawlCrashUrlsRescan -c 1 -b 10
+retry number 0
+previous file count -1
+new file count 0
+resetting run counter
+
+> playwright-fingerprint-consent@1.0.0 consentscan
+> node consentscan
+
+Starting worker 0 for processing page mirrormedia.mg. 211 pages remaining. 1 workers running.
+Starting worker 0 for processing page fling.com. 210 pages remaining. 1 workers running.
+Starting worker 0 for processing page sofoot.com. 209 pages remaining. 1 workers running.
+Starting worker 0 for processing page diggerslist.com. 208 pages remaining. 1 workers running.
+Starting worker 0 for processing page arichwal.com. 207 pages remaining. 1 workers running.
+Starting worker 0 for processing page ovationtix.com. 206 pages remaining. 1 workers running.
+Starting worker 0 for processing page thxdate.com. 205 pages remaining. 1 workers running.
+Starting worker 0 for processing page emiratesnbd.com. 204 pages remaining. 1 workers running.
+Starting worker 0 for processing page e-flux.com. 203 pages remaining. 1 workers running.
+Starting worker 0 for processing page yt2mp3.info. 202 pages remaining. 1 workers running.
+Starting worker 0 for processing page mangaread.org. 201 pages remaining. 1 workers running.
+Starting worker 0 for processing page gordonua.com. 200 pages remaining. 1 workers running.
+Starting worker 0 for processing page lfconnect.com. 199 pages remaining. 1 workers running.
+Starting worker 0 for processing page mwcname.com. 198 pages remaining. 1 workers running.
+Starting worker 0 for processing page pubg.io. 197 pages remaining. 1 workers running.
+Starting worker 0 for processing page kyutech.ac.jp. 196 pages remaining. 1 workers running.
+Starting worker 0 for processing page fulldiploman24.com. 195 pages remaining. 1 workers running.
+Starting worker 0 for processing page sugardaddymatch.net. 194 pages remaining. 1 workers running.
+Starting worker 0 for processing page westminstercollege.edu. 193 pages remaining. 1 workers running.
+Starting worker 0 for processing page moneyweb.co.za. 192 pages remaining. 1 workers running.
+Starting worker 0 for processing page pepper.ru. 191 pages remaining. 1 workers running.
+Starting worker 0 for processing page insurancebusinessmag.com. 190 pages remaining. 1 workers running.
+Starting worker 0 for processing page mtv.co.uk. 189 pages remaining. 1 workers running.
+Starting worker 0 for processing page pediy.com. 188 pages remaining. 1 workers running.
+Starting worker 0 for processing page r-bloggers.com. 187 pages remaining. 1 workers running.
+Starting worker 0 for processing page vesti.bg. 186 pages remaining. 1 workers running.
+Starting worker 0 for processing page chronopost.fr. 185 pages remaining. 1 workers running.
+Starting worker 0 for processing page frienddns.info. 184 pages remaining. 1 workers running.
+Starting worker 0 for processing page programminginsider.com. 183 pages remaining. 1 workers running.
+Starting worker 0 for processing page xlivesex.com. 182 pages remaining. 1 workers running.
+Starting worker 0 for processing page airtory.com. 181 pages remaining. 1 workers running.
+Starting worker 0 for processing page biququ.info. 180 pages remaining. 1 workers running.
+Starting worker 0 for processing page sac.net.cn. 179 pages remaining. 1 workers running.
+Starting worker 0 for processing page worldphone.in. 178 pages remaining. 1 workers running.
+Starting worker 0 for processing page vk-cdn.net. 177 pages remaining. 1 workers running.
+Starting worker 0 for processing page streamabc.net. 176 pages remaining. 1 workers running.
+Starting worker 0 for processing page ru.ac.th. 175 pages remaining. 1 workers running.
+Starting worker 0 for processing page myairbridge.com. 174 pages remaining. 1 workers running.
+Starting worker 0 for processing page xxxindianporn2.com. 173 pages remaining. 1 workers running.
+Starting worker 0 for processing page shangyexinzhi.com. 172 pages remaining. 1 workers running.
+Starting worker 0 for processing page og.dev. 171 pages remaining. 1 workers running.
+Starting worker 0 for processing page kbtx.com. 170 pages remaining. 1 workers running.
+Starting worker 0 for processing page blackwell-synergy.com. 169 pages remaining. 1 workers running.
+Starting worker 0 for processing page wightman.ca. 168 pages remaining. 1 workers running.
+Starting worker 0 for processing page orkin.com. 167 pages remaining. 1 workers running.
+Starting worker 0 for processing page socialmediaweek.org. 166 pages remaining. 1 workers running.
+#######################################################################################################
+#######################################################################################################
+## Warning: Encountered error within playwright (FrameManager::frameCommittedNewDocumentNavigation) ##
+https://www.google.com/recaptcha/api2/aframe
+#######################################################################################################
+#######################################################################################################
+_frames:
+#######################################################################################################
+Map(1) {
+  [32m'frame-6442450963'[39m => [36m<ref *1>[39m Frame {
+    _events: [Object: null prototype] {
+      addlifecycle: [36m[Function (anonymous)][39m,
+      removelifecycle: [36m[Function (anonymous)][39m,
+      internalnavigation: [36m[Function (anonymous)][39m
+    },
+    _eventsCount: [33m3[39m,
+    _maxListeners: [33m0[39m,
+    guid: [32m'frame@ff1aee93d3aeb9d1c3010ff54f9d7e65'[39m,
+    attribution: {
+      isInternalPlaywright: [33mfalse[39m,
+      browser: [36m[FFBrowser][39m,
+      context: [36m[FFBrowserContext][39m,
+      page: [36m[Page][39m,
+      frame: [36m[Circular *1][39m
+    },
+    instrumentation: {},
+    _id: [32m'frame-6442450963'[39m,
+    _firedLifecycleEvents: Set(4) { [32m'networkidle'[39m, [32m'commit'[39m, [32m'domcontentloaded'[39m, [32m'load'[39m },
+    _firedNetworkIdleSelf: [33mtrue[39m,
+    _currentDocument: {
+      documentId: [32m'9258d0e8-9f2d-4953-a0b8-edc660c4af45'[39m,
+      request: [90mundefined[39m
+    },
+    _pendingDocument: { documentId: [32m'45288282652894'[39m, request: [36m[Request][39m },
+    _page: Page {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m12[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'page@6c65c21ea39d132f93b7a803f9fe92f7'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _closedState: [32m'open'[39m,
+      _closedPromise: [36m[ManualPromise][39m,
+      _disconnected: [33mfalse[39m,
+      _initialized: [33mtrue[39m,
+      _disconnectedPromise: [36m[ManualPromise][39m,
+      _crashedPromise: [36m[ManualPromise][39m,
+      _browserContext: [36m[FFBrowserContext][39m,
+      keyboard: [36m[Keyboard][39m,
+      mouse: [36m[Mouse][39m,
+      touchscreen: [36m[Touchscreen][39m,
+      _timeoutSettings: [36m[TimeoutSettings][39m,
+      _delegate: [36m[FFPage][39m,
+      _emulatedSize: [90mundefined[39m,
+      _extraHTTPHeaders: [90mundefined[39m,
+      _emulatedMedia: {},
+      _interceptFileChooser: [33mfalse[39m,
+      _pageBindings: Map(0) {},
+      initScripts: [],
+      _screenshotter: [36m[Screenshotter][39m,
+      _frameManager: [36m[FrameManager][39m,
+      accessibility: [36m[Accessibility][39m,
+      _workers: [36m[Map][39m,
+      pdf: [90mundefined[39m,
+      coverage: [1mnull[22m,
+      _clientRequestInterceptor: [90mundefined[39m,
+      _serverRequestInterceptor: [90mundefined[39m,
+      _ownedContext: [90mundefined[39m,
+      selectors: [36m[Selectors][39m,
+      _pageIsError: [90mundefined[39m,
+      _video: [1mnull[22m,
+      _opener: [90mundefined[39m,
+      _frameThrottler: [36m[FrameThrottler][39m,
+      _isServerSideOnly: [33mfalse[39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[PageDispatcher][39m
+    },
+    _parentFrame: [1mnull[22m,
+    _url: [32m'about:blank'[39m,
+    _detached: [33mfalse[39m,
+    _contextData: Map(2) { [32m'main'[39m => [36m[Object][39m, [32m'utility'[39m => [36m[Object][39m },
+    _childFrames: Set(0) {},
+    _name: [32m'__tcfapiLocator'[39m,
+    _inflightRequests: Set(1) { [36m[Request][39m },
+    _networkIdleTimer: [90mundefined[39m,
+    _setContentCounter: [33m0[39m,
+    _detachedPromise: Promise { [36m<pending>[39m },
+    _detachedCallback: [36m[Function (anonymous)][39m,
+    _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+    _redirectedNavigations: Map(0) {},
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(dispatcher)[39m]: FrameDispatcher {
+      _events: [Object: null prototype] {},
+      _eventsCount: [33m0[39m,
+      _maxListeners: [90mundefined[39m,
+      _connection: [36m[DispatcherConnection][39m,
+      _parent: [36m[PageDispatcher][39m,
+      _dispatchers: Map(0) {},
+      _disposed: [33mfalse[39m,
+      _eventListeners: [36m[Array][39m,
+      _guid: [32m'frame@ff1aee93d3aeb9d1c3010ff54f9d7e65'[39m,
+      _type: [32m'Frame'[39m,
+      _object: [36m[Circular *1][39m,
+      _type_Frame: [33mtrue[39m,
+      _frame: [36m[Circular *1][39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m
+    }
+  }
+}
+#######################################################################################################
+#######################################################################################################
+origError:
+#######################################################################################################
+TypeError: Cannot read properties of undefined (reading 'childFrames')
+    at FrameManager.removeChildFramesRecursively [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:411:31[90m)[39m
+    at FrameManager.frameCommittedNewDocumentNavigation [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:192:12[90m)[39m
+    at FFPage._onNavigationCommitted [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffPage.js:212:30[90m)[39m
+[90m    at FFSession.emit (node:events:513:28)[39m
+    at [90m/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffConnection.js:250:16
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
+## Warning: Encountered error within playwright (FrameManager::frameCommittedNewDocumentNavigation) ##
+https://tpc.googlesyndication.com/sodar/sodar2/225/runner.html
+#######################################################################################################
+#######################################################################################################
+_frames:
+#######################################################################################################
+Map(1) {
+  [32m'frame-6442450963'[39m => [36m<ref *1>[39m Frame {
+    _events: [Object: null prototype] {
+      addlifecycle: [36m[Function (anonymous)][39m,
+      removelifecycle: [36m[Function (anonymous)][39m,
+      internalnavigation: [36m[Function (anonymous)][39m
+    },
+    _eventsCount: [33m3[39m,
+    _maxListeners: [33m0[39m,
+    guid: [32m'frame@ff1aee93d3aeb9d1c3010ff54f9d7e65'[39m,
+    attribution: {
+      isInternalPlaywright: [33mfalse[39m,
+      browser: [36m[FFBrowser][39m,
+      context: [36m[FFBrowserContext][39m,
+      page: [36m[Page][39m,
+      frame: [36m[Circular *1][39m
+    },
+    instrumentation: {},
+    _id: [32m'frame-6442450963'[39m,
+    _firedLifecycleEvents: Set(4) { [32m'networkidle'[39m, [32m'commit'[39m, [32m'domcontentloaded'[39m, [32m'load'[39m },
+    _firedNetworkIdleSelf: [33mtrue[39m,
+    _currentDocument: {
+      documentId: [32m'9258d0e8-9f2d-4953-a0b8-edc660c4af45'[39m,
+      request: [90mundefined[39m
+    },
+    _pendingDocument: { documentId: [32m'45288282652894'[39m, request: [36m[Request][39m },
+    _page: Page {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m12[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'page@6c65c21ea39d132f93b7a803f9fe92f7'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _closedState: [32m'open'[39m,
+      _closedPromise: [36m[ManualPromise][39m,
+      _disconnected: [33mfalse[39m,
+      _initialized: [33mtrue[39m,
+      _disconnectedPromise: [36m[ManualPromise][39m,
+      _crashedPromise: [36m[ManualPromise][39m,
+      _browserContext: [36m[FFBrowserContext][39m,
+      keyboard: [36m[Keyboard][39m,
+      mouse: [36m[Mouse][39m,
+      touchscreen: [36m[Touchscreen][39m,
+      _timeoutSettings: [36m[TimeoutSettings][39m,
+      _delegate: [36m[FFPage][39m,
+      _emulatedSize: [90mundefined[39m,
+      _extraHTTPHeaders: [90mundefined[39m,
+      _emulatedMedia: {},
+      _interceptFileChooser: [33mfalse[39m,
+      _pageBindings: Map(0) {},
+      initScripts: [],
+      _screenshotter: [36m[Screenshotter][39m,
+      _frameManager: [36m[FrameManager][39m,
+      accessibility: [36m[Accessibility][39m,
+      _workers: [36m[Map][39m,
+      pdf: [90mundefined[39m,
+      coverage: [1mnull[22m,
+      _clientRequestInterceptor: [90mundefined[39m,
+      _serverRequestInterceptor: [90mundefined[39m,
+      _ownedContext: [90mundefined[39m,
+      selectors: [36m[Selectors][39m,
+      _pageIsError: [90mundefined[39m,
+      _video: [1mnull[22m,
+      _opener: [90mundefined[39m,
+      _frameThrottler: [36m[FrameThrottler][39m,
+      _isServerSideOnly: [33mfalse[39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[PageDispatcher][39m
+    },
+    _parentFrame: [1mnull[22m,
+    _url: [32m'about:blank'[39m,
+    _detached: [33mfalse[39m,
+    _contextData: Map(2) { [32m'main'[39m => [36m[Object][39m, [32m'utility'[39m => [36m[Object][39m },
+    _childFrames: Set(0) {},
+    _name: [32m'__tcfapiLocator'[39m,
+    _inflightRequests: Set(1) { [36m[Request][39m },
+    _networkIdleTimer: [90mundefined[39m,
+    _setContentCounter: [33m0[39m,
+    _detachedPromise: Promise { [36m<pending>[39m },
+    _detachedCallback: [36m[Function (anonymous)][39m,
+    _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+    _redirectedNavigations: Map(0) {},
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(dispatcher)[39m]: FrameDispatcher {
+      _events: [Object: null prototype] {},
+      _eventsCount: [33m0[39m,
+      _maxListeners: [90mundefined[39m,
+      _connection: [36m[DispatcherConnection][39m,
+      _parent: [36m[PageDispatcher][39m,
+      _dispatchers: Map(0) {},
+      _disposed: [33mfalse[39m,
+      _eventListeners: [36m[Array][39m,
+      _guid: [32m'frame@ff1aee93d3aeb9d1c3010ff54f9d7e65'[39m,
+      _type: [32m'Frame'[39m,
+      _object: [36m[Circular *1][39m,
+      _type_Frame: [33mtrue[39m,
+      _frame: [36m[Circular *1][39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m
+    }
+  }
+}
+#######################################################################################################
+#######################################################################################################
+origError:
+#######################################################################################################
+TypeError: Cannot read properties of undefined (reading 'childFrames')
+    at FrameManager.removeChildFramesRecursively [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:411:31[90m)[39m
+    at FrameManager.frameCommittedNewDocumentNavigation [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:192:12[90m)[39m
+    at FFPage._onNavigationCommitted [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffPage.js:212:30[90m)[39m
+[90m    at FFSession.emit (node:events:513:28)[39m
+    at [90m/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffConnection.js:250:16
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
+## Warning: Encountered error within playwright (FrameManager::frameCommittedNewDocumentNavigation) ##
+https://tpc.googlesyndication.com/sodar/sodar2/225/runner.html
+#######################################################################################################
+#######################################################################################################
+_frames:
+#######################################################################################################
+Map(1) {
+  [32m'frame-6442450963'[39m => [36m<ref *1>[39m Frame {
+    _events: [Object: null prototype] {
+      addlifecycle: [36m[Function (anonymous)][39m,
+      removelifecycle: [36m[Function (anonymous)][39m,
+      internalnavigation: [36m[Function (anonymous)][39m
+    },
+    _eventsCount: [33m3[39m,
+    _maxListeners: [33m0[39m,
+    guid: [32m'frame@ff1aee93d3aeb9d1c3010ff54f9d7e65'[39m,
+    attribution: {
+      isInternalPlaywright: [33mfalse[39m,
+      browser: [36m[FFBrowser][39m,
+      context: [36m[FFBrowserContext][39m,
+      page: [36m[Page][39m,
+      frame: [36m[Circular *1][39m
+    },
+    instrumentation: {},
+    _id: [32m'frame-6442450963'[39m,
+    _firedLifecycleEvents: Set(4) { [32m'networkidle'[39m, [32m'commit'[39m, [32m'domcontentloaded'[39m, [32m'load'[39m },
+    _firedNetworkIdleSelf: [33mtrue[39m,
+    _currentDocument: {
+      documentId: [32m'9258d0e8-9f2d-4953-a0b8-edc660c4af45'[39m,
+      request: [90mundefined[39m
+    },
+    _pendingDocument: { documentId: [32m'45288282652894'[39m, request: [36m[Request][39m },
+    _page: Page {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m12[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'page@6c65c21ea39d132f93b7a803f9fe92f7'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _closedState: [32m'open'[39m,
+      _closedPromise: [36m[ManualPromise][39m,
+      _disconnected: [33mfalse[39m,
+      _initialized: [33mtrue[39m,
+      _disconnectedPromise: [36m[ManualPromise][39m,
+      _crashedPromise: [36m[ManualPromise][39m,
+      _browserContext: [36m[FFBrowserContext][39m,
+      keyboard: [36m[Keyboard][39m,
+      mouse: [36m[Mouse][39m,
+      touchscreen: [36m[Touchscreen][39m,
+      _timeoutSettings: [36m[TimeoutSettings][39m,
+      _delegate: [36m[FFPage][39m,
+      _emulatedSize: [90mundefined[39m,
+      _extraHTTPHeaders: [90mundefined[39m,
+      _emulatedMedia: {},
+      _interceptFileChooser: [33mfalse[39m,
+      _pageBindings: Map(0) {},
+      initScripts: [],
+      _screenshotter: [36m[Screenshotter][39m,
+      _frameManager: [36m[FrameManager][39m,
+      accessibility: [36m[Accessibility][39m,
+      _workers: [36m[Map][39m,
+      pdf: [90mundefined[39m,
+      coverage: [1mnull[22m,
+      _clientRequestInterceptor: [90mundefined[39m,
+      _serverRequestInterceptor: [90mundefined[39m,
+      _ownedContext: [90mundefined[39m,
+      selectors: [36m[Selectors][39m,
+      _pageIsError: [90mundefined[39m,
+      _video: [1mnull[22m,
+      _opener: [90mundefined[39m,
+      _frameThrottler: [36m[FrameThrottler][39m,
+      _isServerSideOnly: [33mfalse[39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[PageDispatcher][39m
+    },
+    _parentFrame: [1mnull[22m,
+    _url: [32m'about:blank'[39m,
+    _detached: [33mfalse[39m,
+    _contextData: Map(2) { [32m'main'[39m => [36m[Object][39m, [32m'utility'[39m => [36m[Object][39m },
+    _childFrames: Set(0) {},
+    _name: [32m'__tcfapiLocator'[39m,
+    _inflightRequests: Set(0) {},
+    _networkIdleTimer: [90mundefined[39m,
+    _setContentCounter: [33m0[39m,
+    _detachedPromise: Promise { [36m<pending>[39m },
+    _detachedCallback: [36m[Function (anonymous)][39m,
+    _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+    _redirectedNavigations: Map(0) {},
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(dispatcher)[39m]: FrameDispatcher {
+      _events: [Object: null prototype] {},
+      _eventsCount: [33m0[39m,
+      _maxListeners: [90mundefined[39m,
+      _connection: [36m[DispatcherConnection][39m,
+      _parent: [36m[PageDispatcher][39m,
+      _dispatchers: Map(0) {},
+      _disposed: [33mfalse[39m,
+      _eventListeners: [36m[Array][39m,
+      _guid: [32m'frame@ff1aee93d3aeb9d1c3010ff54f9d7e65'[39m,
+      _type: [32m'Frame'[39m,
+      _object: [36m[Circular *1][39m,
+      _type_Frame: [33mtrue[39m,
+      _frame: [36m[Circular *1][39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m
+    }
+  }
+}
+#######################################################################################################
+#######################################################################################################
+origError:
+#######################################################################################################
+TypeError: Cannot read properties of undefined (reading 'childFrames')
+    at FrameManager.removeChildFramesRecursively [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:411:31[90m)[39m
+    at FrameManager.frameCommittedNewDocumentNavigation [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:192:12[90m)[39m
+    at FFPage._onNavigationCommitted [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffPage.js:212:30[90m)[39m
+[90m    at FFSession.emit (node:events:513:28)[39m
+    at [90m/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffConnection.js:250:16
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
+#######################################################################################################
+## Warning: Encountered error within playwright (FrameManager::frameCommittedNewDocumentNavigation) ##
+about:blank
+#######################################################################################################
+#######################################################################################################
+_frames:
+#######################################################################################################
+Map(1) {
+  [32m'frame-6442450965'[39m => [36m<ref *1>[39m Frame {
+    _events: [Object: null prototype] {
+      addlifecycle: [36m[Function (anonymous)][39m,
+      removelifecycle: [36m[Function (anonymous)][39m,
+      internalnavigation: [36m[Function (anonymous)][39m
+    },
+    _eventsCount: [33m3[39m,
+    _maxListeners: [33m0[39m,
+    guid: [32m'frame@ff1aee93d3aeb9d1c3010ff54f9d7e65'[39m,
+    attribution: {
+      isInternalPlaywright: [33mfalse[39m,
+      browser: [36m[FFBrowser][39m,
+      context: [36m[FFBrowserContext][39m,
+      page: [36m[Page][39m,
+      frame: [36m[Circular *1][39m
+    },
+    instrumentation: {},
+    _id: [32m'frame-6442450965'[39m,
+    _firedLifecycleEvents: Set(4) { [32m'networkidle'[39m, [32m'commit'[39m, [32m'domcontentloaded'[39m, [32m'load'[39m },
+    _firedNetworkIdleSelf: [33mtrue[39m,
+    _currentDocument: { documentId: [32m'45288282652894'[39m, request: [36m[Request][39m },
+    _pendingDocument: {
+      documentId: [32m'b94db76b-628f-452d-915b-f9b49cf35a7b'[39m,
+      request: [90mundefined[39m
+    },
+    _page: Page {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m12[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'page@6c65c21ea39d132f93b7a803f9fe92f7'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _closedState: [32m'open'[39m,
+      _closedPromise: [36m[ManualPromise][39m,
+      _disconnected: [33mfalse[39m,
+      _initialized: [33mtrue[39m,
+      _disconnectedPromise: [36m[ManualPromise][39m,
+      _crashedPromise: [36m[ManualPromise][39m,
+      _browserContext: [36m[FFBrowserContext][39m,
+      keyboard: [36m[Keyboard][39m,
+      mouse: [36m[Mouse][39m,
+      touchscreen: [36m[Touchscreen][39m,
+      _timeoutSettings: [36m[TimeoutSettings][39m,
+      _delegate: [36m[FFPage][39m,
+      _emulatedSize: [90mundefined[39m,
+      _extraHTTPHeaders: [90mundefined[39m,
+      _emulatedMedia: {},
+      _interceptFileChooser: [33mfalse[39m,
+      _pageBindings: Map(0) {},
+      initScripts: [],
+      _screenshotter: [36m[Screenshotter][39m,
+      _frameManager: [36m[FrameManager][39m,
+      accessibility: [36m[Accessibility][39m,
+      _workers: [36m[Map][39m,
+      pdf: [90mundefined[39m,
+      coverage: [1mnull[22m,
+      _clientRequestInterceptor: [90mundefined[39m,
+      _serverRequestInterceptor: [90mundefined[39m,
+      _ownedContext: [90mundefined[39m,
+      selectors: [36m[Selectors][39m,
+      _pageIsError: [90mundefined[39m,
+      _video: [1mnull[22m,
+      _opener: [90mundefined[39m,
+      _frameThrottler: [36m[FrameThrottler][39m,
+      _isServerSideOnly: [33mfalse[39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[PageDispatcher][39m
+    },
+    _parentFrame: [1mnull[22m,
+    _url: [32m'https://www.google.com/recaptcha/api2/aframe'[39m,
+    _detached: [33mfalse[39m,
+    _contextData: Map(2) { [32m'main'[39m => [36m[Object][39m, [32m'utility'[39m => [36m[Object][39m },
+    _childFrames: Set(0) {},
+    _name: [32m''[39m,
+    _inflightRequests: Set(0) {},
+    _networkIdleTimer: [90mundefined[39m,
+    _setContentCounter: [33m0[39m,
+    _detachedPromise: Promise { [36m<pending>[39m },
+    _detachedCallback: [36m[Function (anonymous)][39m,
+    _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+    _redirectedNavigations: Map(0) {},
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(dispatcher)[39m]: FrameDispatcher {
+      _events: [Object: null prototype] {},
+      _eventsCount: [33m0[39m,
+      _maxListeners: [90mundefined[39m,
+      _connection: [36m[DispatcherConnection][39m,
+      _parent: [36m[PageDispatcher][39m,
+      _dispatchers: Map(0) {},
+      _disposed: [33mfalse[39m,
+      _eventListeners: [36m[Array][39m,
+      _guid: [32m'frame@ff1aee93d3aeb9d1c3010ff54f9d7e65'[39m,
+      _type: [32m'Frame'[39m,
+      _object: [36m[Circular *1][39m,
+      _type_Frame: [33mtrue[39m,
+      _frame: [36m[Circular *1][39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m
+    }
+  }
+}
+#######################################################################################################
+#######################################################################################################
+origError:
+#######################################################################################################
+TypeError: Cannot read properties of undefined (reading 'childFrames')
+    at FrameManager.removeChildFramesRecursively [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:411:31[90m)[39m
+    at FrameManager.frameCommittedNewDocumentNavigation [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:192:12[90m)[39m
+    at FFPage._onNavigationCommitted [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffPage.js:212:30[90m)[39m
+[90m    at FFSession.emit (node:events:513:28)[39m
+    at [90m/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffConnection.js:250:16
+#######################################################################################################
+#######################################################################################################
+Starting worker 0 for processing page bethsoft.com. 165 pages remaining. 1 workers running.
+Starting worker 0 for processing page snackvideo.com. 164 pages remaining. 1 workers running.
+Starting worker 0 for processing page serverhubdns.com. 163 pages remaining. 1 workers running.
+Starting worker 0 for processing page drdobbs.com. 162 pages remaining. 1 workers running.
+#######################################################################################################
+#######################################################################################################
+## Warning: Encountered error within playwright (FrameManager::frameCommittedNewDocumentNavigation) ##
+about:srcdoc
+#######################################################################################################
+#######################################################################################################
+_frames:
+#######################################################################################################
+Map(3) {
+  [32m'frame-6442450954'[39m => [36m<ref *1>[39m Frame {
+    _events: [Object: null prototype] {
+      addlifecycle: [36m[Function (anonymous)][39m,
+      removelifecycle: [36m[Function (anonymous)][39m,
+      internalnavigation: [36m[Function (anonymous)][39m
+    },
+    _eventsCount: [33m3[39m,
+    _maxListeners: [33m0[39m,
+    guid: [32m'frame@75c8af54806e5569f98d59af8ca0f56f'[39m,
+    attribution: {
+      isInternalPlaywright: [33mfalse[39m,
+      browser: [36m[FFBrowser][39m,
+      context: [36m[FFBrowserContext][39m,
+      page: [36m[Page][39m,
+      frame: [36m[Circular *1][39m
+    },
+    instrumentation: {},
+    _id: [32m'frame-6442450954'[39m,
+    _firedLifecycleEvents: Set(1) { [32m'commit'[39m },
+    _firedNetworkIdleSelf: [33mfalse[39m,
+    _currentDocument: { documentId: [90mundefined[39m, request: [90mundefined[39m },
+    _pendingDocument: { documentId: [32m'49269717336509'[39m, request: [36m[Request][39m },
+    _page: Page {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m12[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'page@caddfd41b339f6d12d96b020039867a1'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _closedState: [32m'open'[39m,
+      _closedPromise: [36m[ManualPromise][39m,
+      _disconnected: [33mfalse[39m,
+      _initialized: [33mtrue[39m,
+      _disconnectedPromise: [36m[ManualPromise][39m,
+      _crashedPromise: [36m[ManualPromise][39m,
+      _browserContext: [36m[FFBrowserContext][39m,
+      keyboard: [36m[Keyboard][39m,
+      mouse: [36m[Mouse][39m,
+      touchscreen: [36m[Touchscreen][39m,
+      _timeoutSettings: [36m[TimeoutSettings][39m,
+      _delegate: [36m[FFPage][39m,
+      _emulatedSize: [90mundefined[39m,
+      _extraHTTPHeaders: [90mundefined[39m,
+      _emulatedMedia: {},
+      _interceptFileChooser: [33mfalse[39m,
+      _pageBindings: Map(0) {},
+      initScripts: [],
+      _screenshotter: [36m[Screenshotter][39m,
+      _frameManager: [36m[FrameManager][39m,
+      accessibility: [36m[Accessibility][39m,
+      _workers: Map(0) {},
+      pdf: [90mundefined[39m,
+      coverage: [1mnull[22m,
+      _clientRequestInterceptor: [90mundefined[39m,
+      _serverRequestInterceptor: [90mundefined[39m,
+      _ownedContext: [90mundefined[39m,
+      selectors: [36m[Selectors][39m,
+      _pageIsError: [90mundefined[39m,
+      _video: [1mnull[22m,
+      _opener: [90mundefined[39m,
+      _frameThrottler: [36m[FrameThrottler][39m,
+      _isServerSideOnly: [33mfalse[39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[PageDispatcher][39m
+    },
+    _parentFrame: Frame {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m3[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'frame@dee648c6590f9c53d4aa2b76ac1760ec'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _id: [32m'frame-6442450957'[39m,
+      _firedLifecycleEvents: [36m[Set][39m,
+      _firedNetworkIdleSelf: [33mtrue[39m,
+      _currentDocument: [36m[Object][39m,
+      _pendingDocument: [90mundefined[39m,
+      _page: [36m[Page][39m,
+      _parentFrame: [1mnull[22m,
+      _url: [32m'https://sale.aliexpress.ru/ru/__pc/continuation_default.htm?af=a&4340&cn=brunswick&cv=150973&dp=134.169.32.31&aff_fcid=a8324f385a9e41d8a29add5877e93d61-1666005185223-04509-_DC3V8QR&tt=CPS_NORMAL&aff_fsk=_DC3V8QR&aff_platform=portals-tool&sk=_DC3V8QR&aff_trace_key=a8324f385a9e41d8a29add5877e93d61-1666005185223-04509-_DC3V8QR&terminal_id=724f89a520554364be48fe4d0f869fad'[39m,
+      _detached: [33mfalse[39m,
+      _contextData: [36m[Map][39m,
+      _childFrames: [36m[Set][39m,
+      _name: [32m''[39m,
+      _inflightRequests: Set(0) {},
+      _networkIdleTimer: [90mundefined[39m,
+      _setContentCounter: [33m0[39m,
+      _detachedPromise: [36m[Promise][39m,
+      _detachedCallback: [36m[Function (anonymous)][39m,
+      _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+      _redirectedNavigations: Map(0) {},
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[FrameDispatcher][39m
+    },
+    _url: [32m''[39m,
+    _detached: [33mfalse[39m,
+    _contextData: Map(2) { [32m'main'[39m => [36m[Object][39m, [32m'utility'[39m => [36m[Object][39m },
+    _childFrames: Set(0) {},
+    _name: [32m''[39m,
+    _inflightRequests: Set(0) {},
+    _networkIdleTimer: Timeout {
+      _idleTimeout: [33m500[39m,
+      _idlePrev: [36m[Timeout][39m,
+      _idleNext: [36m[TimersList][39m,
+      _idleStart: [33m1268159[39m,
+      _onTimeout: [36m[Function (anonymous)][39m,
+      _timerArgs: [90mundefined[39m,
+      _repeat: [1mnull[22m,
+      _destroyed: [33mfalse[39m,
+      [[32mSymbol(refed)[39m]: [33mtrue[39m,
+      [[32mSymbol(kHasPrimitive)[39m]: [33mfalse[39m,
+      [[32mSymbol(asyncId)[39m]: [33m4012125[39m,
+      [[32mSymbol(triggerId)[39m]: [33m0[39m
+    },
+    _setContentCounter: [33m0[39m,
+    _detachedPromise: Promise { [36m<pending>[39m },
+    _detachedCallback: [36m[Function (anonymous)][39m,
+    _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+    _redirectedNavigations: Map(0) {},
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(dispatcher)[39m]: FrameDispatcher {
+      _events: [Object: null prototype] {},
+      _eventsCount: [33m0[39m,
+      _maxListeners: [90mundefined[39m,
+      _connection: [36m[DispatcherConnection][39m,
+      _parent: [36m[PageDispatcher][39m,
+      _dispatchers: Map(0) {},
+      _disposed: [33mfalse[39m,
+      _eventListeners: [36m[Array][39m,
+      _guid: [32m'frame@75c8af54806e5569f98d59af8ca0f56f'[39m,
+      _type: [32m'Frame'[39m,
+      _object: [36m[Circular *1][39m,
+      _type_Frame: [33mtrue[39m,
+      _frame: [36m[Circular *1][39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m
+    }
+  },
+  [32m'frame-6442450955'[39m => [36m<ref *2>[39m Frame {
+    _events: [Object: null prototype] {
+      addlifecycle: [36m[Function (anonymous)][39m,
+      removelifecycle: [36m[Function (anonymous)][39m,
+      internalnavigation: [36m[Function (anonymous)][39m
+    },
+    _eventsCount: [33m3[39m,
+    _maxListeners: [33m0[39m,
+    guid: [32m'frame@0d51e047d01aa52fd0ef05d9a5559a66'[39m,
+    attribution: {
+      isInternalPlaywright: [33mfalse[39m,
+      browser: [36m[FFBrowser][39m,
+      context: [36m[FFBrowserContext][39m,
+      page: [36m[Page][39m,
+      frame: [36m[Circular *2][39m
+    },
+    instrumentation: {},
+    _id: [32m'frame-6442450955'[39m,
+    _firedLifecycleEvents: Set(1) { [32m'commit'[39m },
+    _firedNetworkIdleSelf: [33mfalse[39m,
+    _currentDocument: { documentId: [90mundefined[39m, request: [90mundefined[39m },
+    _pendingDocument: { documentId: [32m'49269717336510'[39m, request: [36m[Request][39m },
+    _page: Page {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m12[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'page@caddfd41b339f6d12d96b020039867a1'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _closedState: [32m'open'[39m,
+      _closedPromise: [36m[ManualPromise][39m,
+      _disconnected: [33mfalse[39m,
+      _initialized: [33mtrue[39m,
+      _disconnectedPromise: [36m[ManualPromise][39m,
+      _crashedPromise: [36m[ManualPromise][39m,
+      _browserContext: [36m[FFBrowserContext][39m,
+      keyboard: [36m[Keyboard][39m,
+      mouse: [36m[Mouse][39m,
+      touchscreen: [36m[Touchscreen][39m,
+      _timeoutSettings: [36m[TimeoutSettings][39m,
+      _delegate: [36m[FFPage][39m,
+      _emulatedSize: [90mundefined[39m,
+      _extraHTTPHeaders: [90mundefined[39m,
+      _emulatedMedia: {},
+      _interceptFileChooser: [33mfalse[39m,
+      _pageBindings: Map(0) {},
+      initScripts: [],
+      _screenshotter: [36m[Screenshotter][39m,
+      _frameManager: [36m[FrameManager][39m,
+      accessibility: [36m[Accessibility][39m,
+      _workers: Map(0) {},
+      pdf: [90mundefined[39m,
+      coverage: [1mnull[22m,
+      _clientRequestInterceptor: [90mundefined[39m,
+      _serverRequestInterceptor: [90mundefined[39m,
+      _ownedContext: [90mundefined[39m,
+      selectors: [36m[Selectors][39m,
+      _pageIsError: [90mundefined[39m,
+      _video: [1mnull[22m,
+      _opener: [90mundefined[39m,
+      _frameThrottler: [36m[FrameThrottler][39m,
+      _isServerSideOnly: [33mfalse[39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[PageDispatcher][39m
+    },
+    _parentFrame: Frame {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m3[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'frame@dee648c6590f9c53d4aa2b76ac1760ec'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _id: [32m'frame-6442450957'[39m,
+      _firedLifecycleEvents: [36m[Set][39m,
+      _firedNetworkIdleSelf: [33mtrue[39m,
+      _currentDocument: [36m[Object][39m,
+      _pendingDocument: [90mundefined[39m,
+      _page: [36m[Page][39m,
+      _parentFrame: [1mnull[22m,
+      _url: [32m'https://sale.aliexpress.ru/ru/__pc/continuation_default.htm?af=a&4340&cn=brunswick&cv=150973&dp=134.169.32.31&aff_fcid=a8324f385a9e41d8a29add5877e93d61-1666005185223-04509-_DC3V8QR&tt=CPS_NORMAL&aff_fsk=_DC3V8QR&aff_platform=portals-tool&sk=_DC3V8QR&aff_trace_key=a8324f385a9e41d8a29add5877e93d61-1666005185223-04509-_DC3V8QR&terminal_id=724f89a520554364be48fe4d0f869fad'[39m,
+      _detached: [33mfalse[39m,
+      _contextData: [36m[Map][39m,
+      _childFrames: [36m[Set][39m,
+      _name: [32m''[39m,
+      _inflightRequests: Set(0) {},
+      _networkIdleTimer: [90mundefined[39m,
+      _setContentCounter: [33m0[39m,
+      _detachedPromise: [36m[Promise][39m,
+      _detachedCallback: [36m[Function (anonymous)][39m,
+      _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+      _redirectedNavigations: Map(0) {},
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[FrameDispatcher][39m
+    },
+    _url: [32m''[39m,
+    _detached: [33mfalse[39m,
+    _contextData: Map(2) { [32m'main'[39m => [36m[Object][39m, [32m'utility'[39m => [36m[Object][39m },
+    _childFrames: Set(0) {},
+    _name: [32m''[39m,
+    _inflightRequests: Set(0) {},
+    _networkIdleTimer: Timeout {
+      _idleTimeout: [33m500[39m,
+      _idlePrev: [36m[TimersList][39m,
+      _idleNext: [36m[Timeout][39m,
+      _idleStart: [33m1268161[39m,
+      _onTimeout: [36m[Function (anonymous)][39m,
+      _timerArgs: [90mundefined[39m,
+      _repeat: [1mnull[22m,
+      _destroyed: [33mfalse[39m,
+      [[32mSymbol(refed)[39m]: [33mtrue[39m,
+      [[32mSymbol(kHasPrimitive)[39m]: [33mfalse[39m,
+      [[32mSymbol(asyncId)[39m]: [33m4012129[39m,
+      [[32mSymbol(triggerId)[39m]: [33m0[39m
+    },
+    _setContentCounter: [33m0[39m,
+    _detachedPromise: Promise { [36m<pending>[39m },
+    _detachedCallback: [36m[Function (anonymous)][39m,
+    _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+    _redirectedNavigations: Map(0) {},
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(dispatcher)[39m]: FrameDispatcher {
+      _events: [Object: null prototype] {},
+      _eventsCount: [33m0[39m,
+      _maxListeners: [90mundefined[39m,
+      _connection: [36m[DispatcherConnection][39m,
+      _parent: [36m[PageDispatcher][39m,
+      _dispatchers: Map(0) {},
+      _disposed: [33mfalse[39m,
+      _eventListeners: [36m[Array][39m,
+      _guid: [32m'frame@0d51e047d01aa52fd0ef05d9a5559a66'[39m,
+      _type: [32m'Frame'[39m,
+      _object: [36m[Circular *2][39m,
+      _type_Frame: [33mtrue[39m,
+      _frame: [36m[Circular *2][39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m
+    }
+  },
+  [32m'frame-6442450957'[39m => [36m<ref *3>[39m Frame {
+    _events: [Object: null prototype] {
+      addlifecycle: [36m[Function (anonymous)][39m,
+      removelifecycle: [36m[Function (anonymous)][39m,
+      internalnavigation: [36m[Function (anonymous)][39m
+    },
+    _eventsCount: [33m3[39m,
+    _maxListeners: [33m0[39m,
+    guid: [32m'frame@dee648c6590f9c53d4aa2b76ac1760ec'[39m,
+    attribution: {
+      isInternalPlaywright: [33mfalse[39m,
+      browser: [36m[FFBrowser][39m,
+      context: [36m[FFBrowserContext][39m,
+      page: [36m[Page][39m,
+      frame: [36m[Circular *3][39m
+    },
+    instrumentation: {},
+    _id: [32m'frame-6442450957'[39m,
+    _firedLifecycleEvents: Set(3) { [32m'commit'[39m, [32m'load'[39m, [32m'domcontentloaded'[39m },
+    _firedNetworkIdleSelf: [33mtrue[39m,
+    _currentDocument: { documentId: [32m'49269717336123'[39m, request: [36m[Request][39m },
+    _pendingDocument: [90mundefined[39m,
+    _page: Page {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m12[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'page@caddfd41b339f6d12d96b020039867a1'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _closedState: [32m'open'[39m,
+      _closedPromise: [36m[ManualPromise][39m,
+      _disconnected: [33mfalse[39m,
+      _initialized: [33mtrue[39m,
+      _disconnectedPromise: [36m[ManualPromise][39m,
+      _crashedPromise: [36m[ManualPromise][39m,
+      _browserContext: [36m[FFBrowserContext][39m,
+      keyboard: [36m[Keyboard][39m,
+      mouse: [36m[Mouse][39m,
+      touchscreen: [36m[Touchscreen][39m,
+      _timeoutSettings: [36m[TimeoutSettings][39m,
+      _delegate: [36m[FFPage][39m,
+      _emulatedSize: [90mundefined[39m,
+      _extraHTTPHeaders: [90mundefined[39m,
+      _emulatedMedia: {},
+      _interceptFileChooser: [33mfalse[39m,
+      _pageBindings: Map(0) {},
+      initScripts: [],
+      _screenshotter: [36m[Screenshotter][39m,
+      _frameManager: [36m[FrameManager][39m,
+      accessibility: [36m[Accessibility][39m,
+      _workers: Map(0) {},
+      pdf: [90mundefined[39m,
+      coverage: [1mnull[22m,
+      _clientRequestInterceptor: [90mundefined[39m,
+      _serverRequestInterceptor: [90mundefined[39m,
+      _ownedContext: [90mundefined[39m,
+      selectors: [36m[Selectors][39m,
+      _pageIsError: [90mundefined[39m,
+      _video: [1mnull[22m,
+      _opener: [90mundefined[39m,
+      _frameThrottler: [36m[FrameThrottler][39m,
+      _isServerSideOnly: [33mfalse[39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[PageDispatcher][39m
+    },
+    _parentFrame: [1mnull[22m,
+    _url: [32m'https://sale.aliexpress.ru/ru/__pc/continuation_default.htm?af=a&4340&cn=brunswick&cv=150973&dp=134.169.32.31&aff_fcid=a8324f385a9e41d8a29add5877e93d61-1666005185223-04509-_DC3V8QR&tt=CPS_NORMAL&aff_fsk=_DC3V8QR&aff_platform=portals-tool&sk=_DC3V8QR&aff_trace_key=a8324f385a9e41d8a29add5877e93d61-1666005185223-04509-_DC3V8QR&terminal_id=724f89a520554364be48fe4d0f869fad'[39m,
+    _detached: [33mfalse[39m,
+    _contextData: Map(2) { [32m'main'[39m => [36m[Object][39m, [32m'utility'[39m => [36m[Object][39m },
+    _childFrames: Set(2) { [36m[Frame][39m, [36m[Frame][39m },
+    _name: [32m''[39m,
+    _inflightRequests: Set(0) {},
+    _networkIdleTimer: [90mundefined[39m,
+    _setContentCounter: [33m0[39m,
+    _detachedPromise: Promise { [36m<pending>[39m },
+    _detachedCallback: [36m[Function (anonymous)][39m,
+    _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+    _redirectedNavigations: Map(0) {},
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(dispatcher)[39m]: FrameDispatcher {
+      _events: [Object: null prototype] {},
+      _eventsCount: [33m0[39m,
+      _maxListeners: [90mundefined[39m,
+      _connection: [36m[DispatcherConnection][39m,
+      _parent: [36m[PageDispatcher][39m,
+      _dispatchers: Map(0) {},
+      _disposed: [33mfalse[39m,
+      _eventListeners: [36m[Array][39m,
+      _guid: [32m'frame@dee648c6590f9c53d4aa2b76ac1760ec'[39m,
+      _type: [32m'Frame'[39m,
+      _object: [36m[Circular *3][39m,
+      _type_Frame: [33mtrue[39m,
+      _frame: [36m[Circular *3][39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m
+    }
+  }
+}
+#######################################################################################################
+#######################################################################################################
+origError:
+#######################################################################################################
+TypeError: Cannot read properties of undefined (reading 'childFrames')
+    at FrameManager.removeChildFramesRecursively [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:411:31[90m)[39m
+    at FrameManager.frameCommittedNewDocumentNavigation [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:192:12[90m)[39m
+    at FFPage._onNavigationCommitted [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffPage.js:212:30[90m)[39m
+[90m    at FFSession.emit (node:events:513:28)[39m
+    at [90m/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffConnection.js:250:16
+#######################################################################################################
+#######################################################################################################
+Starting worker 0 for processing page jav777.xyz. 161 pages remaining. 1 workers running.
+Starting worker 0 for processing page yarus.ru. 160 pages remaining. 1 workers running.
+Starting worker 0 for processing page juxtapoz.com. 159 pages remaining. 1 workers running.
+Starting worker 0 for processing page attalascom.net. 158 pages remaining. 1 workers running.
+Starting worker 0 for processing page fullprogramlarindir.net. 157 pages remaining. 1 workers running.
+Starting worker 0 for processing page hivebedrock.eu. 156 pages remaining. 1 workers running.
+Starting worker 0 for processing page citromail.hu. 155 pages remaining. 1 workers running.
+Starting worker 0 for processing page firstrade.com. 154 pages remaining. 1 workers running.
+Starting worker 0 for processing page naydex.net. 153 pages remaining. 1 workers running.
+Starting worker 0 for processing page nothing.tech. 152 pages remaining. 1 workers running.
+Starting worker 0 for processing page twisted4life.com. 151 pages remaining. 1 workers running.
+Starting worker 0 for processing page bluemic.com. 150 pages remaining. 1 workers running.
+Starting worker 0 for processing page 1password.eu. 149 pages remaining. 1 workers running.
+Starting worker 0 for processing page arabic-keyboard.org. 148 pages remaining. 1 workers running.
+Starting worker 0 for processing page ti.ch. 147 pages remaining. 1 workers running.
+Starting worker 0 for processing page longislandpress.com. 146 pages remaining. 1 workers running.
+Starting worker 0 for processing page designyourway.net. 145 pages remaining. 1 workers running.
+Starting worker 0 for processing page unikom.ac.id. 144 pages remaining. 1 workers running.
+Starting worker 0 for processing page fr-dating-reviews.com. 143 pages remaining. 1 workers running.
+Starting worker 0 for processing page fiemg.com.br. 142 pages remaining. 1 workers running.
+Starting worker 0 for processing page mxcdn.net. 141 pages remaining. 1 workers running.
+Starting worker 0 for processing page macroaxis.com. 140 pages remaining. 1 workers running.
+Starting worker 0 for processing page searchenginereports.net. 139 pages remaining. 1 workers running.
+Starting worker 0 for processing page nic.ad.jp. 138 pages remaining. 1 workers running.
+Starting worker 0 for processing page onlinenewspapers.com. 137 pages remaining. 1 workers running.
+Starting worker 0 for processing page kelatv.com. 136 pages remaining. 1 workers running.
+Starting worker 0 for processing page flypool.org. 135 pages remaining. 1 workers running.
+Starting worker 0 for processing page viki.net. 134 pages remaining. 1 workers running.
+Starting worker 0 for processing page prw.net. 133 pages remaining. 1 workers running.
+Starting worker 0 for processing page mdns.rs. 132 pages remaining. 1 workers running.
+Starting worker 0 for processing page scienceopen.com. 131 pages remaining. 1 workers running.
+Starting worker 0 for processing page lan.com. 130 pages remaining. 1 workers running.
+Starting worker 0 for processing page jabber.org. 129 pages remaining. 1 workers running.
+Starting worker 0 for processing page betaqr.com. 128 pages remaining. 1 workers running.
+Starting worker 0 for processing page dfsco.com. 127 pages remaining. 1 workers running.
+Starting worker 0 for processing page damai.cn. 126 pages remaining. 1 workers running.
+Starting worker 0 for processing page bmcebank.ma. 125 pages remaining. 1 workers running.
+Starting worker 0 for processing page uson.mx. 124 pages remaining. 1 workers running.
+Starting worker 0 for processing page openpr.de. 123 pages remaining. 1 workers running.
+Starting worker 0 for processing page gangnamanma.com. 122 pages remaining. 1 workers running.
+Starting worker 0 for processing page bbt.co.id. 121 pages remaining. 1 workers running.
+Starting worker 0 for processing page thepiratebays.com. 120 pages remaining. 1 workers running.
+Starting worker 0 for processing page avermedia.com. 119 pages remaining. 1 workers running.
+Starting worker 0 for processing page collenwhr.website. 118 pages remaining. 1 workers running.
+Starting worker 0 for processing page bcdnx.com. 117 pages remaining. 1 workers running.
+Starting worker 0 for processing page nab.org. 116 pages remaining. 1 workers running.
+Starting worker 0 for processing page srly.io. 115 pages remaining. 1 workers running.
+Starting worker 0 for processing page netmera-web.com. 114 pages remaining. 1 workers running.
+Starting worker 0 for processing page tycg.gov.tw. 113 pages remaining. 1 workers running.
+Starting worker 0 for processing page convenience.org. 112 pages remaining. 1 workers running.
+Starting worker 0 for processing page ucom.am. 111 pages remaining. 1 workers running.
+Starting worker 0 for processing page hartford-hwp.com. 110 pages remaining. 1 workers running.
+Starting worker 0 for processing page reloj-alarma.es. 109 pages remaining. 1 workers running.
+Starting worker 0 for processing page glu.com. 108 pages remaining. 1 workers running.
+Starting worker 0 for processing page honda-tech.com. 107 pages remaining. 1 workers running.
+Starting worker 0 for processing page broadly.com. 106 pages remaining. 1 workers running.
+Starting worker 0 for processing page eventcreate.com. 105 pages remaining. 1 workers running.
+Starting worker 0 for processing page 04045858.com. 104 pages remaining. 1 workers running.
+Starting worker 0 for processing page cdcfoundation.org. 103 pages remaining. 1 workers running.
+Starting worker 0 for processing page simcentric.com. 102 pages remaining. 1 workers running.
+Starting worker 0 for processing page alsa-project.org. 101 pages remaining. 1 workers running.
+Starting worker 0 for processing page awseducate.com. 100 pages remaining. 1 workers running.
+Starting worker 0 for processing page searchmagnified.com. 99 pages remaining. 1 workers running.
+Starting worker 0 for processing page webrad.io. 98 pages remaining. 1 workers running.
+Starting worker 0 for processing page digma.ru. 97 pages remaining. 1 workers running.
+Starting worker 0 for processing page noor.jp. 96 pages remaining. 1 workers running.
+Starting worker 0 for processing page sysnet.net. 95 pages remaining. 1 workers running.
+Starting worker 0 for processing page staticaly.com. 94 pages remaining. 1 workers running.
+Starting worker 0 for processing page radpartners.com. 93 pages remaining. 1 workers running.
+Starting worker 0 for processing page dasala.co.uk. 92 pages remaining. 1 workers running.
+Starting worker 0 for processing page otz.de. 91 pages remaining. 1 workers running.
+Starting worker 0 for processing page tehinternal.com. 90 pages remaining. 1 workers running.
+Starting worker 0 for processing page adxsrve.com. 89 pages remaining. 1 workers running.
+Starting worker 0 for processing page brides-for-dating.com. 88 pages remaining. 1 workers running.
+Starting worker 0 for processing page sportsonline.to. 87 pages remaining. 1 workers running.
+Starting worker 0 for processing page thenewsherald.com. 86 pages remaining. 1 workers running.
+Starting worker 0 for processing page adhost.com. 85 pages remaining. 1 workers running.
+Starting worker 0 for processing page yovoads.com. 84 pages remaining. 1 workers running.
+Starting worker 0 for processing page 34king.live. 83 pages remaining. 1 workers running.
+Starting worker 0 for processing page lurkmore.ru. 82 pages remaining. 1 workers running.
+Starting worker 0 for processing page digikey.cn. 81 pages remaining. 1 workers running.
+Starting worker 0 for processing page adidasyeezyofficialwebsite.com. 80 pages remaining. 1 workers running.
+Starting worker 0 for processing page kracie.co.jp. 79 pages remaining. 1 workers running.
+Starting worker 0 for processing page plgrn.nl. 78 pages remaining. 1 workers running.
+Starting worker 0 for processing page jalisco.gob.mx. 77 pages remaining. 1 workers running.
+Starting worker 0 for processing page citivelocity.com. 76 pages remaining. 1 workers running.
+Starting worker 0 for processing page hezibuluo.com. 75 pages remaining. 1 workers running.
+#######################################################################################################
+#######################################################################################################
+## Warning: Encountered error within playwright (FrameManager::frameCommittedNewDocumentNavigation) ##
+about:blank
+#######################################################################################################
+#######################################################################################################
+_frames:
+#######################################################################################################
+Map(4) {
+  [32m'frame-6442450979'[39m => [36m<ref *1>[39m Frame {
+    _events: [Object: null prototype] {
+      addlifecycle: [36m[Function (anonymous)][39m,
+      removelifecycle: [36m[Function (anonymous)][39m,
+      internalnavigation: [36m[Function (anonymous)][39m
+    },
+    _eventsCount: [33m3[39m,
+    _maxListeners: [33m0[39m,
+    guid: [32m'frame@de0a0fc554e0f67ea755ed8b65292ac4'[39m,
+    attribution: {
+      isInternalPlaywright: [33mfalse[39m,
+      browser: [36m[FFBrowser][39m,
+      context: [36m[FFBrowserContext][39m,
+      page: [36m[Page][39m,
+      frame: [36m[Circular *1][39m
+    },
+    instrumentation: {},
+    _id: [32m'frame-6442450979'[39m,
+    _firedLifecycleEvents: Set(3) { [32m'commit'[39m, [32m'domcontentloaded'[39m, [32m'load'[39m },
+    _firedNetworkIdleSelf: [33mfalse[39m,
+    _currentDocument: { documentId: [32m'133382356861261'[39m, request: [36m[Request][39m },
+    _pendingDocument: [90mundefined[39m,
+    _page: Page {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m12[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'page@e56f9e2ed9150822e42f56d277299771'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _closedState: [32m'open'[39m,
+      _closedPromise: [36m[ManualPromise][39m,
+      _disconnected: [33mfalse[39m,
+      _initialized: [33mtrue[39m,
+      _disconnectedPromise: [36m[ManualPromise][39m,
+      _crashedPromise: [36m[ManualPromise][39m,
+      _browserContext: [36m[FFBrowserContext][39m,
+      keyboard: [36m[Keyboard][39m,
+      mouse: [36m[Mouse][39m,
+      touchscreen: [36m[Touchscreen][39m,
+      _timeoutSettings: [36m[TimeoutSettings][39m,
+      _delegate: [36m[FFPage][39m,
+      _emulatedSize: [90mundefined[39m,
+      _extraHTTPHeaders: [90mundefined[39m,
+      _emulatedMedia: {},
+      _interceptFileChooser: [33mfalse[39m,
+      _pageBindings: Map(0) {},
+      initScripts: [],
+      _screenshotter: [36m[Screenshotter][39m,
+      _frameManager: [36m[FrameManager][39m,
+      accessibility: [36m[Accessibility][39m,
+      _workers: Map(0) {},
+      pdf: [90mundefined[39m,
+      coverage: [1mnull[22m,
+      _clientRequestInterceptor: [90mundefined[39m,
+      _serverRequestInterceptor: [90mundefined[39m,
+      _ownedContext: [90mundefined[39m,
+      selectors: [36m[Selectors][39m,
+      _pageIsError: [90mundefined[39m,
+      _video: [1mnull[22m,
+      _opener: [90mundefined[39m,
+      _frameThrottler: [36m[FrameThrottler][39m,
+      _isServerSideOnly: [33mfalse[39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[PageDispatcher][39m
+    },
+    _parentFrame: Frame {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m3[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'frame@b194e01e0413f198ce9d3f965d1cc2b9'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _id: [32m'frame-6442450983'[39m,
+      _firedLifecycleEvents: [36m[Set][39m,
+      _firedNetworkIdleSelf: [33mfalse[39m,
+      _currentDocument: [36m[Object][39m,
+      _pendingDocument: [36m[Object][39m,
+      _page: [36m[Page][39m,
+      _parentFrame: [1mnull[22m,
+      _url: [32m'https://www.hezibuluo.com/'[39m,
+      _detached: [33mfalse[39m,
+      _contextData: [36m[Map][39m,
+      _childFrames: [36m[Set][39m,
+      _name: [32m''[39m,
+      _inflightRequests: Set(0) {},
+      _networkIdleTimer: Timeout {
+        _idleTimeout: [33m500[39m,
+        _idlePrev: [36m[Timeout][39m,
+        _idleNext: [36m[TimersList][39m,
+        _idleStart: [33m4102744[39m,
+        _onTimeout: [36m[Function (anonymous)][39m,
+        _timerArgs: [90mundefined[39m,
+        _repeat: [1mnull[22m,
+        _destroyed: [33mfalse[39m,
+        [[32mSymbol(refed)[39m]: [33mtrue[39m,
+        [[32mSymbol(kHasPrimitive)[39m]: [33mfalse[39m,
+        [[32mSymbol(asyncId)[39m]: [33m9154294[39m,
+        [[32mSymbol(triggerId)[39m]: [33m0[39m
+      },
+      _setContentCounter: [33m0[39m,
+      _detachedPromise: [36m[Promise][39m,
+      _detachedCallback: [36m[Function (anonymous)][39m,
+      _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+      _redirectedNavigations: Map(0) {},
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[FrameDispatcher][39m
+    },
+    _url: [32m'https://tpc.googlesyndication.com/sodar/sodar2/225/runner.html'[39m,
+    _detached: [33mfalse[39m,
+    _contextData: Map(2) { [32m'main'[39m => [36m[Object][39m, [32m'utility'[39m => [36m[Object][39m },
+    _childFrames: Set(1) { [36m[Frame][39m },
+    _name: [32m''[39m,
+    _inflightRequests: Set(0) {},
+    _networkIdleTimer: Timeout {
+      _idleTimeout: [33m500[39m,
+      _idlePrev: [36m[Timeout][39m,
+      _idleNext: [36m[Timeout][39m,
+      _idleStart: [33m4102817[39m,
+      _onTimeout: [36m[Function (anonymous)][39m,
+      _timerArgs: [90mundefined[39m,
+      _repeat: [1mnull[22m,
+      _destroyed: [33mfalse[39m,
+      [[32mSymbol(refed)[39m]: [33mtrue[39m,
+      [[32mSymbol(kHasPrimitive)[39m]: [33mfalse[39m,
+      [[32mSymbol(asyncId)[39m]: [33m9154444[39m,
+      [[32mSymbol(triggerId)[39m]: [33m0[39m
+    },
+    _setContentCounter: [33m0[39m,
+    _detachedPromise: Promise { [36m<pending>[39m },
+    _detachedCallback: [36m[Function (anonymous)][39m,
+    _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+    _redirectedNavigations: Map(0) {},
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(dispatcher)[39m]: FrameDispatcher {
+      _events: [Object: null prototype] {},
+      _eventsCount: [33m0[39m,
+      _maxListeners: [90mundefined[39m,
+      _connection: [36m[DispatcherConnection][39m,
+      _parent: [36m[PageDispatcher][39m,
+      _dispatchers: Map(0) {},
+      _disposed: [33mfalse[39m,
+      _eventListeners: [36m[Array][39m,
+      _guid: [32m'frame@de0a0fc554e0f67ea755ed8b65292ac4'[39m,
+      _type: [32m'Frame'[39m,
+      _object: [36m[Circular *1][39m,
+      _type_Frame: [33mtrue[39m,
+      _frame: [36m[Circular *1][39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m
+    }
+  },
+  [32m'frame-6442450980'[39m => [36m<ref *2>[39m Frame {
+    _events: [Object: null prototype] {
+      addlifecycle: [36m[Function (anonymous)][39m,
+      removelifecycle: [36m[Function (anonymous)][39m,
+      internalnavigation: [36m[Function (anonymous)][39m
+    },
+    _eventsCount: [33m3[39m,
+    _maxListeners: [33m0[39m,
+    guid: [32m'frame@0c31b7e9c0671c23460fb2ed046529fd'[39m,
+    attribution: {
+      isInternalPlaywright: [33mfalse[39m,
+      browser: [36m[FFBrowser][39m,
+      context: [36m[FFBrowserContext][39m,
+      page: [36m[Page][39m,
+      frame: [36m[Circular *2][39m
+    },
+    instrumentation: {},
+    _id: [32m'frame-6442450980'[39m,
+    _firedLifecycleEvents: Set(3) { [32m'commit'[39m, [32m'domcontentloaded'[39m, [32m'load'[39m },
+    _firedNetworkIdleSelf: [33mfalse[39m,
+    _currentDocument: { documentId: [32m'133382356861262'[39m, request: [36m[Request][39m },
+    _pendingDocument: [90mundefined[39m,
+    _page: Page {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m12[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'page@e56f9e2ed9150822e42f56d277299771'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _closedState: [32m'open'[39m,
+      _closedPromise: [36m[ManualPromise][39m,
+      _disconnected: [33mfalse[39m,
+      _initialized: [33mtrue[39m,
+      _disconnectedPromise: [36m[ManualPromise][39m,
+      _crashedPromise: [36m[ManualPromise][39m,
+      _browserContext: [36m[FFBrowserContext][39m,
+      keyboard: [36m[Keyboard][39m,
+      mouse: [36m[Mouse][39m,
+      touchscreen: [36m[Touchscreen][39m,
+      _timeoutSettings: [36m[TimeoutSettings][39m,
+      _delegate: [36m[FFPage][39m,
+      _emulatedSize: [90mundefined[39m,
+      _extraHTTPHeaders: [90mundefined[39m,
+      _emulatedMedia: {},
+      _interceptFileChooser: [33mfalse[39m,
+      _pageBindings: Map(0) {},
+      initScripts: [],
+      _screenshotter: [36m[Screenshotter][39m,
+      _frameManager: [36m[FrameManager][39m,
+      accessibility: [36m[Accessibility][39m,
+      _workers: Map(0) {},
+      pdf: [90mundefined[39m,
+      coverage: [1mnull[22m,
+      _clientRequestInterceptor: [90mundefined[39m,
+      _serverRequestInterceptor: [90mundefined[39m,
+      _ownedContext: [90mundefined[39m,
+      selectors: [36m[Selectors][39m,
+      _pageIsError: [90mundefined[39m,
+      _video: [1mnull[22m,
+      _opener: [90mundefined[39m,
+      _frameThrottler: [36m[FrameThrottler][39m,
+      _isServerSideOnly: [33mfalse[39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[PageDispatcher][39m
+    },
+    _parentFrame: Frame {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m3[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'frame@b194e01e0413f198ce9d3f965d1cc2b9'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _id: [32m'frame-6442450983'[39m,
+      _firedLifecycleEvents: [36m[Set][39m,
+      _firedNetworkIdleSelf: [33mfalse[39m,
+      _currentDocument: [36m[Object][39m,
+      _pendingDocument: [36m[Object][39m,
+      _page: [36m[Page][39m,
+      _parentFrame: [1mnull[22m,
+      _url: [32m'https://www.hezibuluo.com/'[39m,
+      _detached: [33mfalse[39m,
+      _contextData: [36m[Map][39m,
+      _childFrames: [36m[Set][39m,
+      _name: [32m''[39m,
+      _inflightRequests: Set(0) {},
+      _networkIdleTimer: Timeout {
+        _idleTimeout: [33m500[39m,
+        _idlePrev: [36m[Timeout][39m,
+        _idleNext: [36m[TimersList][39m,
+        _idleStart: [33m4102744[39m,
+        _onTimeout: [36m[Function (anonymous)][39m,
+        _timerArgs: [90mundefined[39m,
+        _repeat: [1mnull[22m,
+        _destroyed: [33mfalse[39m,
+        [[32mSymbol(refed)[39m]: [33mtrue[39m,
+        [[32mSymbol(kHasPrimitive)[39m]: [33mfalse[39m,
+        [[32mSymbol(asyncId)[39m]: [33m9154294[39m,
+        [[32mSymbol(triggerId)[39m]: [33m0[39m
+      },
+      _setContentCounter: [33m0[39m,
+      _detachedPromise: [36m[Promise][39m,
+      _detachedCallback: [36m[Function (anonymous)][39m,
+      _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+      _redirectedNavigations: Map(0) {},
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[FrameDispatcher][39m
+    },
+    _url: [32m'https://www.google.com/recaptcha/api2/aframe'[39m,
+    _detached: [33mfalse[39m,
+    _contextData: Map(2) { [32m'main'[39m => [36m[Object][39m, [32m'utility'[39m => [36m[Object][39m },
+    _childFrames: Set(0) {},
+    _name: [32m''[39m,
+    _inflightRequests: Set(0) {},
+    _networkIdleTimer: Timeout {
+      _idleTimeout: [33m500[39m,
+      _idlePrev: [36m[TimersList][39m,
+      _idleNext: [36m[Timeout][39m,
+      _idleStart: [33m4102878[39m,
+      _onTimeout: [36m[Function (anonymous)][39m,
+      _timerArgs: [90mundefined[39m,
+      _repeat: [1mnull[22m,
+      _destroyed: [33mfalse[39m,
+      [[32mSymbol(refed)[39m]: [33mtrue[39m,
+      [[32mSymbol(kHasPrimitive)[39m]: [33mfalse[39m,
+      [[32mSymbol(asyncId)[39m]: [33m9154489[39m,
+      [[32mSymbol(triggerId)[39m]: [33m0[39m
+    },
+    _setContentCounter: [33m0[39m,
+    _detachedPromise: Promise { [36m<pending>[39m },
+    _detachedCallback: [36m[Function (anonymous)][39m,
+    _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+    _redirectedNavigations: Map(0) {},
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(dispatcher)[39m]: FrameDispatcher {
+      _events: [Object: null prototype] {},
+      _eventsCount: [33m0[39m,
+      _maxListeners: [90mundefined[39m,
+      _connection: [36m[DispatcherConnection][39m,
+      _parent: [36m[PageDispatcher][39m,
+      _dispatchers: Map(0) {},
+      _disposed: [33mfalse[39m,
+      _eventListeners: [36m[Array][39m,
+      _guid: [32m'frame@0c31b7e9c0671c23460fb2ed046529fd'[39m,
+      _type: [32m'Frame'[39m,
+      _object: [36m[Circular *2][39m,
+      _type_Frame: [33mtrue[39m,
+      _frame: [36m[Circular *2][39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m
+    }
+  },
+  [32m'frame-6442450981'[39m => [36m<ref *3>[39m Frame {
+    _events: [Object: null prototype] {
+      addlifecycle: [36m[Function (anonymous)][39m,
+      removelifecycle: [36m[Function (anonymous)][39m,
+      internalnavigation: [36m[Function (anonymous)][39m
+    },
+    _eventsCount: [33m3[39m,
+    _maxListeners: [33m0[39m,
+    guid: [32m'frame@7dc55d1c81439439b94f5d77a39103ed'[39m,
+    attribution: {
+      isInternalPlaywright: [33mfalse[39m,
+      browser: [36m[FFBrowser][39m,
+      context: [36m[FFBrowserContext][39m,
+      page: [36m[Page][39m,
+      frame: [36m[Circular *3][39m
+    },
+    instrumentation: {},
+    _id: [32m'frame-6442450981'[39m,
+    _firedLifecycleEvents: Set(3) { [32m'commit'[39m, [32m'domcontentloaded'[39m, [32m'load'[39m },
+    _firedNetworkIdleSelf: [33mfalse[39m,
+    _currentDocument: {
+      documentId: [32m'e0177117-4936-458e-9e4c-8bfc49325972'[39m,
+      request: [90mundefined[39m
+    },
+    _pendingDocument: [90mundefined[39m,
+    _page: Page {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m12[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'page@e56f9e2ed9150822e42f56d277299771'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _closedState: [32m'open'[39m,
+      _closedPromise: [36m[ManualPromise][39m,
+      _disconnected: [33mfalse[39m,
+      _initialized: [33mtrue[39m,
+      _disconnectedPromise: [36m[ManualPromise][39m,
+      _crashedPromise: [36m[ManualPromise][39m,
+      _browserContext: [36m[FFBrowserContext][39m,
+      keyboard: [36m[Keyboard][39m,
+      mouse: [36m[Mouse][39m,
+      touchscreen: [36m[Touchscreen][39m,
+      _timeoutSettings: [36m[TimeoutSettings][39m,
+      _delegate: [36m[FFPage][39m,
+      _emulatedSize: [90mundefined[39m,
+      _extraHTTPHeaders: [90mundefined[39m,
+      _emulatedMedia: {},
+      _interceptFileChooser: [33mfalse[39m,
+      _pageBindings: Map(0) {},
+      initScripts: [],
+      _screenshotter: [36m[Screenshotter][39m,
+      _frameManager: [36m[FrameManager][39m,
+      accessibility: [36m[Accessibility][39m,
+      _workers: Map(0) {},
+      pdf: [90mundefined[39m,
+      coverage: [1mnull[22m,
+      _clientRequestInterceptor: [90mundefined[39m,
+      _serverRequestInterceptor: [90mundefined[39m,
+      _ownedContext: [90mundefined[39m,
+      selectors: [36m[Selectors][39m,
+      _pageIsError: [90mundefined[39m,
+      _video: [1mnull[22m,
+      _opener: [90mundefined[39m,
+      _frameThrottler: [36m[FrameThrottler][39m,
+      _isServerSideOnly: [33mfalse[39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[PageDispatcher][39m
+    },
+    _parentFrame: [36m<ref *1>[39m Frame {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m3[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'frame@de0a0fc554e0f67ea755ed8b65292ac4'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _id: [32m'frame-6442450979'[39m,
+      _firedLifecycleEvents: [36m[Set][39m,
+      _firedNetworkIdleSelf: [33mfalse[39m,
+      _currentDocument: [36m[Object][39m,
+      _pendingDocument: [90mundefined[39m,
+      _page: [36m[Page][39m,
+      _parentFrame: [36m[Frame][39m,
+      _url: [32m'https://tpc.googlesyndication.com/sodar/sodar2/225/runner.html'[39m,
+      _detached: [33mfalse[39m,
+      _contextData: [36m[Map][39m,
+      _childFrames: [36m[Set][39m,
+      _name: [32m''[39m,
+      _inflightRequests: Set(0) {},
+      _networkIdleTimer: Timeout {
+        _idleTimeout: [33m500[39m,
+        _idlePrev: [36m[Timeout][39m,
+        _idleNext: [36m[Timeout][39m,
+        _idleStart: [33m4102817[39m,
+        _onTimeout: [36m[Function (anonymous)][39m,
+        _timerArgs: [90mundefined[39m,
+        _repeat: [1mnull[22m,
+        _destroyed: [33mfalse[39m,
+        [[32mSymbol(refed)[39m]: [33mtrue[39m,
+        [[32mSymbol(kHasPrimitive)[39m]: [33mfalse[39m,
+        [[32mSymbol(asyncId)[39m]: [33m9154444[39m,
+        [[32mSymbol(triggerId)[39m]: [33m0[39m
+      },
+      _setContentCounter: [33m0[39m,
+      _detachedPromise: [36m[Promise][39m,
+      _detachedCallback: [36m[Function (anonymous)][39m,
+      _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+      _redirectedNavigations: Map(0) {},
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[FrameDispatcher][39m
+    },
+    _url: [32m'about:blank'[39m,
+    _detached: [33mfalse[39m,
+    _contextData: Map(2) { [32m'main'[39m => [36m[Object][39m, [32m'utility'[39m => [36m[Object][39m },
+    _childFrames: Set(0) {},
+    _name: [32m''[39m,
+    _inflightRequests: Set(0) {},
+    _networkIdleTimer: Timeout {
+      _idleTimeout: [33m500[39m,
+      _idlePrev: [36m[Timeout][39m,
+      _idleNext: [36m[Timeout][39m,
+      _idleStart: [33m4102848[39m,
+      _onTimeout: [36m[Function (anonymous)][39m,
+      _timerArgs: [90mundefined[39m,
+      _repeat: [1mnull[22m,
+      _destroyed: [33mfalse[39m,
+      [[32mSymbol(refed)[39m]: [33mtrue[39m,
+      [[32mSymbol(kHasPrimitive)[39m]: [33mfalse[39m,
+      [[32mSymbol(asyncId)[39m]: [33m9154474[39m,
+      [[32mSymbol(triggerId)[39m]: [33m0[39m
+    },
+    _setContentCounter: [33m0[39m,
+    _detachedPromise: Promise { [36m<pending>[39m },
+    _detachedCallback: [36m[Function (anonymous)][39m,
+    _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+    _redirectedNavigations: Map(0) {},
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(dispatcher)[39m]: FrameDispatcher {
+      _events: [Object: null prototype] {},
+      _eventsCount: [33m0[39m,
+      _maxListeners: [90mundefined[39m,
+      _connection: [36m[DispatcherConnection][39m,
+      _parent: [36m[PageDispatcher][39m,
+      _dispatchers: Map(0) {},
+      _disposed: [33mfalse[39m,
+      _eventListeners: [36m[Array][39m,
+      _guid: [32m'frame@7dc55d1c81439439b94f5d77a39103ed'[39m,
+      _type: [32m'Frame'[39m,
+      _object: [36m[Circular *3][39m,
+      _type_Frame: [33mtrue[39m,
+      _frame: [36m[Circular *3][39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m
+    }
+  },
+  [32m'frame-6442450983'[39m => [36m<ref *4>[39m Frame {
+    _events: [Object: null prototype] {
+      addlifecycle: [36m[Function (anonymous)][39m,
+      removelifecycle: [36m[Function (anonymous)][39m,
+      internalnavigation: [36m[Function (anonymous)][39m
+    },
+    _eventsCount: [33m3[39m,
+    _maxListeners: [33m0[39m,
+    guid: [32m'frame@b194e01e0413f198ce9d3f965d1cc2b9'[39m,
+    attribution: {
+      isInternalPlaywright: [33mfalse[39m,
+      browser: [36m[FFBrowser][39m,
+      context: [36m[FFBrowserContext][39m,
+      page: [36m[Page][39m,
+      frame: [36m[Circular *4][39m
+    },
+    instrumentation: {},
+    _id: [32m'frame-6442450983'[39m,
+    _firedLifecycleEvents: Set(2) { [32m'commit'[39m, [32m'load'[39m },
+    _firedNetworkIdleSelf: [33mfalse[39m,
+    _currentDocument: { documentId: [32m'133382356861138'[39m, request: [36m[Request][39m },
+    _pendingDocument: { documentId: [32m'133382356861267'[39m, request: [90mundefined[39m },
+    _page: Page {
+      _events: [36m[Object: null prototype][39m,
+      _eventsCount: [33m12[39m,
+      _maxListeners: [33m0[39m,
+      guid: [32m'page@e56f9e2ed9150822e42f56d277299771'[39m,
+      attribution: [36m[Object][39m,
+      instrumentation: {},
+      _closedState: [32m'open'[39m,
+      _closedPromise: [36m[ManualPromise][39m,
+      _disconnected: [33mfalse[39m,
+      _initialized: [33mtrue[39m,
+      _disconnectedPromise: [36m[ManualPromise][39m,
+      _crashedPromise: [36m[ManualPromise][39m,
+      _browserContext: [36m[FFBrowserContext][39m,
+      keyboard: [36m[Keyboard][39m,
+      mouse: [36m[Mouse][39m,
+      touchscreen: [36m[Touchscreen][39m,
+      _timeoutSettings: [36m[TimeoutSettings][39m,
+      _delegate: [36m[FFPage][39m,
+      _emulatedSize: [90mundefined[39m,
+      _extraHTTPHeaders: [90mundefined[39m,
+      _emulatedMedia: {},
+      _interceptFileChooser: [33mfalse[39m,
+      _pageBindings: Map(0) {},
+      initScripts: [],
+      _screenshotter: [36m[Screenshotter][39m,
+      _frameManager: [36m[FrameManager][39m,
+      accessibility: [36m[Accessibility][39m,
+      _workers: Map(0) {},
+      pdf: [90mundefined[39m,
+      coverage: [1mnull[22m,
+      _clientRequestInterceptor: [90mundefined[39m,
+      _serverRequestInterceptor: [90mundefined[39m,
+      _ownedContext: [90mundefined[39m,
+      selectors: [36m[Selectors][39m,
+      _pageIsError: [90mundefined[39m,
+      _video: [1mnull[22m,
+      _opener: [90mundefined[39m,
+      _frameThrottler: [36m[FrameThrottler][39m,
+      _isServerSideOnly: [33mfalse[39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+      [[32mSymbol(dispatcher)[39m]: [36m[PageDispatcher][39m
+    },
+    _parentFrame: [1mnull[22m,
+    _url: [32m'https://www.hezibuluo.com/'[39m,
+    _detached: [33mfalse[39m,
+    _contextData: Map(2) { [32m'main'[39m => [36m[Object][39m, [32m'utility'[39m => [36m[Object][39m },
+    _childFrames: Set(2) { [36m[Frame][39m, [36m[Frame][39m },
+    _name: [32m''[39m,
+    _inflightRequests: Set(0) {},
+    _networkIdleTimer: Timeout {
+      _idleTimeout: [33m500[39m,
+      _idlePrev: [36m[Timeout][39m,
+      _idleNext: [36m[TimersList][39m,
+      _idleStart: [33m4102744[39m,
+      _onTimeout: [36m[Function (anonymous)][39m,
+      _timerArgs: [90mundefined[39m,
+      _repeat: [1mnull[22m,
+      _destroyed: [33mfalse[39m,
+      [[32mSymbol(refed)[39m]: [33mtrue[39m,
+      [[32mSymbol(kHasPrimitive)[39m]: [33mfalse[39m,
+      [[32mSymbol(asyncId)[39m]: [33m9154294[39m,
+      [[32mSymbol(triggerId)[39m]: [33m0[39m
+    },
+    _setContentCounter: [33m0[39m,
+    _detachedPromise: Promise { [36m<pending>[39m },
+    _detachedCallback: [36m[Function (anonymous)][39m,
+    _raceAgainstEvaluationStallingEventsPromises: Set(0) {},
+    _redirectedNavigations: Map(0) {},
+    [[32mSymbol(kCapture)[39m]: [33mfalse[39m,
+    [[32mSymbol(dispatcher)[39m]: FrameDispatcher {
+      _events: [Object: null prototype] {},
+      _eventsCount: [33m0[39m,
+      _maxListeners: [90mundefined[39m,
+      _connection: [36m[DispatcherConnection][39m,
+      _parent: [36m[PageDispatcher][39m,
+      _dispatchers: Map(0) {},
+      _disposed: [33mfalse[39m,
+      _eventListeners: [36m[Array][39m,
+      _guid: [32m'frame@b194e01e0413f198ce9d3f965d1cc2b9'[39m,
+      _type: [32m'Frame'[39m,
+      _object: [36m[Circular *4][39m,
+      _type_Frame: [33mtrue[39m,
+      _frame: [36m[Circular *4][39m,
+      [[32mSymbol(kCapture)[39m]: [33mfalse[39m
+    }
+  }
+}
+#######################################################################################################
+#######################################################################################################
+origError:
+#######################################################################################################
+TypeError: Cannot read properties of undefined (reading 'childFrames')
+    at FrameManager.removeChildFramesRecursively [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:411:31[90m)[39m
+    at FrameManager.frameCommittedNewDocumentNavigation [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:192:12[90m)[39m
+    at FFPage._onNavigationCommitted [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffPage.js:212:30[90m)[39m
+[90m    at FFSession.emit (node:events:513:28)[39m
+    at [90m/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffConnection.js:250:16
+#######################################################################################################
+#######################################################################################################
+Starting worker 0 for processing page lpi.org. 74 pages remaining. 1 workers running.
+Starting worker 0 for processing page wwx.tw. 73 pages remaining. 1 workers running.
+
+<--- Last few GCs --->
+
+[22:0x5603ae0]  6513917 ms: Mark-sweep 4049.8 (4134.8) -> 4039.7 (4138.3) MB, 1834.7 / 1.0 ms  (average mu = 0.886, current mu = 0.031) task scavenge might not succeed
+[22:0x5603ae0]  6516619 ms: Mark-sweep 4052.7 (4138.6) -> 4043.0 (4141.8) MB, 1643.0 / 1.1 ms  (average mu = 0.811, current mu = 0.392) task scavenge might not succeed
+[22:0x5603ae0]  6519431 ms: Mark-sweep 4056.6 (4141.8) -> 4046.7 (4145.6) MB, 2751.1 / 1.4 ms  (average mu = 0.622, current mu = 0.022) task scavenge might not succeed
+
+
+<--- JS stacktrace --->
+
+FATAL ERROR: Reached heap limit Allocation failed - JavaScript heap out of memory
+ 1: 0xb02930 node::Abort() [node]
+ 2: 0xa18149 node::FatalError(char const*, char const*) [node]
+ 3: 0xcdd16e v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [node]
+ 4: 0xcdd4e7 v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [node]
+ 5: 0xe94b55  [node]
+ 6: 0xea481d v8::internal::Heap::CollectGarbage(v8::internal::AllocationSpace, v8::internal::GarbageCollectionReason, v8::GCCallbackFlags) [node]
+ 7: 0xf079e4 v8::internal::ScavengeJob::Task::RunInternal() [node]
+ 8: 0xd9b0fb non-virtual thunk to v8::internal::CancelableTask::Run() [node]
+ 9: 0xb6e0d4 node::PerIsolatePlatformData::RunForegroundTask(std::unique_ptr<v8::Task, std::default_delete<v8::Task> >) [node]
+10: 0xb6ff39 node::PerIsolatePlatformData::FlushForegroundTasksInternal() [node]
+11: 0x1547ce6  [node]
+12: 0x155a414  [node]
+13: 0x1548638 uv_run [node]
+14: 0xa3fa35 node::SpinEventLoop(node::Environment*) [node]
+15: 0xb42c26 node::NodeMainInstance::Run() [node]
+16: 0xac898c node::Start(int, char**) [node]
+17: 0x7f558a877083 __libc_start_main [/lib/x86_64-linux-gnu/libc.so.6]
+18: 0xa3d03c  [node]
+Aborted (core dumped)
+retry number 1
+previous file count 0
+new file count 0
+
+> playwright-fingerprint-consent@1.0.0 consentscan
+> node consentscan
+
+Found incomplete backup. Restoring backup and continuing crawl from there
+Backups read.
+Pending pages readjusted.
+Restore finished. Restored 130 results.
+Starting worker 0 for processing page digikey.cn. 81 pages remaining. 1 workers running.
+Starting worker 0 for processing page adidasyeezyofficialwebsite.com. 80 pages remaining. 1 workers running.
+Starting worker 0 for processing page kracie.co.jp. 79 pages remaining. 1 workers running.
+Starting worker 0 for processing page plgrn.nl. 78 pages remaining. 1 workers running.
+Starting worker 0 for processing page jalisco.gob.mx. 77 pages remaining. 1 workers running.
+Starting worker 0 for processing page citivelocity.com. 76 pages remaining. 1 workers running.
+Starting worker 0 for processing page hezibuluo.com. 75 pages remaining. 1 workers running.
+Starting worker 0 for processing page lpi.org. 74 pages remaining. 1 workers running.
+Starting worker 0 for processing page wwx.tw. 73 pages remaining. 1 workers running.
+Starting worker 0 for processing page amazonwatch.org. 72 pages remaining. 1 workers running.
+Starting worker 0 for processing page westernjournalism.com. 71 pages remaining. 1 workers running.
+Starting worker 0 for processing page keepsolid.com. 70 pages remaining. 1 workers running.
+Starting worker 0 for processing page kings.edu. 69 pages remaining. 1 workers running.
+Starting worker 0 for processing page mgroupnet.com. 68 pages remaining. 1 workers running.
+Starting worker 0 for processing page oldhouseonline.com. 67 pages remaining. 1 workers running.
+Starting worker 0 for processing page manet.de. 66 pages remaining. 1 workers running.
+Starting worker 0 for processing page hangame.co.jp. 65 pages remaining. 1 workers running.
+Starting worker 0 for processing page iculture.cc. 64 pages remaining. 1 workers running.
+Starting worker 0 for processing page pagecloud.com. 63 pages remaining. 1 workers running.
+Starting worker 0 for processing page cio.de. 62 pages remaining. 1 workers running.
+Starting worker 0 for processing page boxofficeticketsales.com. 61 pages remaining. 1 workers running.
+Starting worker 0 for processing page htwins.net. 60 pages remaining. 1 workers running.
+Starting worker 0 for processing page cheapfridgefreezers.co.uk. 59 pages remaining. 1 workers running.
+Starting worker 0 for processing page acgcbk.one. 58 pages remaining. 1 workers running.
+Starting worker 0 for processing page subdelirium.com. 57 pages remaining. 1 workers running.
+Starting worker 0 for processing page b-amooz.com. 56 pages remaining. 1 workers running.
+Starting worker 0 for processing page maghost.ro. 55 pages remaining. 1 workers running.
+Starting worker 0 for processing page labs.it. 54 pages remaining. 1 workers running.
+Starting worker 0 for processing page bizmeka.com. 53 pages remaining. 1 workers running.
+Starting worker 0 for processing page fipe.org.br. 52 pages remaining. 1 workers running.
+Starting worker 0 for processing page audi.cn. 51 pages remaining. 1 workers running.
+Starting worker 0 for processing page lcgindia.com. 50 pages remaining. 1 workers running.
+Starting worker 0 for processing page hnltff.com.cn. 49 pages remaining. 1 workers running.
+Starting worker 0 for processing page stbchina.cn. 48 pages remaining. 1 workers running.
+Starting worker 0 for processing page homestars.tech. 47 pages remaining. 1 workers running.
+Starting worker 0 for processing page suicidology.org. 46 pages remaining. 1 workers running.
+Starting worker 0 for processing page instalki.pl. 45 pages remaining. 1 workers running.
+Starting worker 0 for processing page theepicbrowser.com. 44 pages remaining. 1 workers running.
+Starting worker 0 for processing page skalacontrol.com. 43 pages remaining. 1 workers running.
+Starting worker 0 for processing page tosdr.org. 42 pages remaining. 1 workers running.
+Starting worker 0 for processing page hmn.ru. 41 pages remaining. 1 workers running.
+Starting worker 0 for processing page goabode.com. 40 pages remaining. 1 workers running.
+Starting worker 0 for processing page smyk.com. 39 pages remaining. 1 workers running.
+Starting worker 0 for processing page hawaiiantel.com. 38 pages remaining. 1 workers running.
+Starting worker 0 for processing page desired.de. 37 pages remaining. 1 workers running.
+Starting worker 0 for processing page takeit.in. 36 pages remaining. 1 workers running.
+Starting worker 0 for processing page datki.net. 35 pages remaining. 1 workers running.
+Starting worker 0 for processing page cccoe.net. 34 pages remaining. 1 workers running.
+Starting worker 0 for processing page telia.lt. 33 pages remaining. 1 workers running.
+Starting worker 0 for processing page zfilm-hd-463.online. 32 pages remaining. 1 workers running.
+Starting worker 0 for processing page zhytomyr-online.com. 31 pages remaining. 1 workers running.
+Starting worker 0 for processing page maggiesottero.com. 30 pages remaining. 1 workers running.
+Starting worker 0 for processing page identityiq.com. 29 pages remaining. 1 workers running.
+Starting worker 0 for processing page ktxp.com. 28 pages remaining. 1 workers running.
+Starting worker 0 for processing page pushpush.io. 27 pages remaining. 1 workers running.
+Starting worker 0 for processing page dreamcloudsleep.com. 26 pages remaining. 1 workers running.
+Starting worker 0 for processing page uksrv.co.uk. 25 pages remaining. 1 workers running.
+Starting worker 0 for processing page trademap.org. 24 pages remaining. 1 workers running.
+Starting worker 0 for processing page littlearmenia.com. 23 pages remaining. 1 workers running.
+Starting worker 0 for processing page humanscale.com. 22 pages remaining. 1 workers running.
+Starting worker 0 for processing page forbiddenplanet.com. 21 pages remaining. 1 workers running.
+Starting worker 0 for processing page ns11.net. 20 pages remaining. 1 workers running.
+Starting worker 0 for processing page e.leclerc. 19 pages remaining. 1 workers running.
+Starting worker 0 for processing page chaos.social. 18 pages remaining. 1 workers running.
+Starting worker 0 for processing page thenews.pl. 17 pages remaining. 1 workers running.
+Starting worker 0 for processing page szinesweb.hu. 16 pages remaining. 1 workers running.
+Starting worker 0 for processing page unimelb.net.au. 15 pages remaining. 1 workers running.
+Starting worker 0 for processing page loushao.net. 14 pages remaining. 1 workers running.
+Starting worker 0 for processing page cip.cc. 13 pages remaining. 1 workers running.
+Starting worker 0 for processing page aar.org. 12 pages remaining. 1 workers running.
+Starting worker 0 for processing page menshouse.gr. 11 pages remaining. 1 workers running.
+Starting worker 0 for processing page packworld.com. 10 pages remaining. 1 workers running.
+Starting worker 0 for processing page pladform.ru. 9 pages remaining. 1 workers running.
+Starting worker 0 for processing page firstdigital.com. 8 pages remaining. 1 workers running.
+Starting worker 0 for processing page treasureisland.com. 7 pages remaining. 1 workers running.
+Starting worker 0 for processing page candidhosting.com. 6 pages remaining. 1 workers running.
+Starting worker 0 for processing page itcosmetics.com. 5 pages remaining. 1 workers running.
+Starting worker 0 for processing page kamen-rider-official.com. 4 pages remaining. 1 workers running.
+Starting worker 0 for processing page ounass.com. 3 pages remaining. 1 workers running.
+Starting worker 0 for processing page ultimatebootcd.com. 2 pages remaining. 1 workers running.
+Starting worker 0 for processing page myrussianbride.net. 1 pages remaining. 1 workers running.
+Starting worker 0 for processing page cdn-d50.com. 0 pages remaining. 1 workers running.
+No more pages available. Worker 0 will no longer be started.  0 workers remaining.
+Write successful
+tests successfully finished

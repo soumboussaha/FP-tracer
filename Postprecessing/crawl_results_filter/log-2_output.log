@@ -1,0 +1,171 @@
+running tests with auto-restart
+only use this, if output is set to output/* (default for docker)
+using parameters -o output/results.json --list tranco/tranco_top-100k_N7QVW_2022-10-07 -c 1 -b 10
+retry number 0
+previous file count -1
+new file count 0
+resetting run counter
+
+> playwright-fingerprint-consent@1.0.0 consentscan
+> node consentscan
+
+Found incomplete backup. Restoring backup and continuing crawl from there
+Backups read.
+Pending pages readjusted.
+Restore finished. Restored 5140 results.
+Starting worker 0 for processing page law.com. 94859 pages remaining. 1 workers running.
+Starting worker 0 for processing page kunlungr.com. 94858 pages remaining. 1 workers running.
+Starting worker 0 for processing page technorail.com. 94857 pages remaining. 1 workers running.
+Starting worker 0 for processing page clover.com. 94856 pages remaining. 1 workers running.
+Starting worker 0 for processing page kampyle.com. 94855 pages remaining. 1 workers running.
+Starting worker 0 for processing page softlayer.com. 94854 pages remaining. 1 workers running.
+Starting worker 0 for processing page dnsv1.com.cn. 94853 pages remaining. 1 workers running.
+Starting worker 0 for processing page seznamzpravy.cz. 94852 pages remaining. 1 workers running.
+Starting worker 0 for processing page reviewjournal.com. 94851 pages remaining. 1 workers running.
+Starting worker 0 for processing page airee.ru. 94850 pages remaining. 1 workers running.
+Starting worker 0 for processing page spdns.de. 94849 pages remaining. 1 workers running.
+Starting worker 0 for processing page about.google. 94848 pages remaining. 1 workers running.
+Starting worker 0 for processing page webgo.de. 94847 pages remaining. 1 workers running.
+/app/node_modules/playwright-core/lib/server/frames.js:392
+    for (const child of frame.childFrames()) this._removeFramesRecursively(child);
+                              ^
+
+TypeError: Cannot read properties of undefined (reading 'childFrames')
+    at FrameManager.removeChildFramesRecursively [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:392:31[90m)[39m
+    at FrameManager.frameCommittedNewDocumentNavigation [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:191:10[90m)[39m
+    at FFPage._onNavigationCommitted [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffPage.js:212:30[90m)[39m
+[90m    at FFSession.emit (node:events:513:28)[39m
+    at [90m/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffConnection.js:248:41
+retry number 1
+previous file count 0
+new file count 0
+
+> playwright-fingerprint-consent@1.0.0 consentscan
+> node consentscan
+
+Found incomplete backup. Restoring backup and continuing crawl from there
+Backups read.
+Pending pages readjusted.
+Restore finished. Restored 5150 results.
+Starting worker 0 for processing page spdns.de. 94849 pages remaining. 1 workers running.
+Starting worker 0 for processing page about.google. 94848 pages remaining. 1 workers running.
+Starting worker 0 for processing page webgo.de. 94847 pages remaining. 1 workers running.
+/app/node_modules/playwright-core/lib/server/frames.js:392
+    for (const child of frame.childFrames()) this._removeFramesRecursively(child);
+                              ^
+
+TypeError: Cannot read properties of undefined (reading 'childFrames')
+    at FrameManager.removeChildFramesRecursively [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:392:31[90m)[39m
+    at FrameManager.frameCommittedNewDocumentNavigation [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:191:10[90m)[39m
+    at FFPage._onNavigationCommitted [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffPage.js:212:30[90m)[39m
+[90m    at FFSession.emit (node:events:513:28)[39m
+    at [90m/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffConnection.js:248:41
+retry number 2
+previous file count 0
+new file count 0
+
+> playwright-fingerprint-consent@1.0.0 consentscan
+> node consentscan
+
+Found incomplete backup. Restoring backup and continuing crawl from there
+Backups read.
+Pending pages readjusted.
+Restore finished. Restored 5150 results.
+Starting worker 0 for processing page spdns.de. 94849 pages remaining. 1 workers running.
+Starting worker 0 for processing page about.google. 94848 pages remaining. 1 workers running.
+Starting worker 0 for processing page webgo.de. 94847 pages remaining. 1 workers running.
+/app/node_modules/playwright-core/lib/server/frames.js:392
+    for (const child of frame.childFrames()) this._removeFramesRecursively(child);
+                              ^
+
+TypeError: Cannot read properties of undefined (reading 'childFrames')
+    at FrameManager.removeChildFramesRecursively [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:392:31[90m)[39m
+    at FrameManager.frameCommittedNewDocumentNavigation [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:191:10[90m)[39m
+    at FFPage._onNavigationCommitted [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffPage.js:212:30[90m)[39m
+[90m    at FFSession.emit (node:events:513:28)[39m
+    at [90m/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffConnection.js:248:41
+retry number 3
+previous file count 0
+new file count 0
+
+> playwright-fingerprint-consent@1.0.0 consentscan
+> node consentscan
+
+Found incomplete backup. Restoring backup and continuing crawl from there
+Backups read.
+Pending pages readjusted.
+Restore finished. Restored 5150 results.
+Starting worker 0 for processing page spdns.de. 94849 pages remaining. 1 workers running.
+Starting worker 0 for processing page about.google. 94848 pages remaining. 1 workers running.
+Starting worker 0 for processing page webgo.de. 94847 pages remaining. 1 workers running.
+/app/node_modules/playwright-core/lib/server/frames.js:392
+    for (const child of frame.childFrames()) this._removeFramesRecursively(child);
+                              ^
+
+TypeError: Cannot read properties of undefined (reading 'childFrames')
+    at FrameManager.removeChildFramesRecursively [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:392:31[90m)[39m
+    at FrameManager.frameCommittedNewDocumentNavigation [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:191:10[90m)[39m
+    at FFPage._onNavigationCommitted [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffPage.js:212:30[90m)[39m
+[90m    at FFSession.emit (node:events:513:28)[39m
+    at [90m/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffConnection.js:248:41
+retry number 4
+previous file count 0
+new file count 0
+
+> playwright-fingerprint-consent@1.0.0 consentscan
+> node consentscan
+
+Found incomplete backup. Restoring backup and continuing crawl from there
+Backups read.
+Pending pages readjusted.
+Restore finished. Restored 5150 results.
+Starting worker 0 for processing page spdns.de. 94849 pages remaining. 1 workers running.
+Starting worker 0 for processing page about.google. 94848 pages remaining. 1 workers running.
+Starting worker 0 for processing page webgo.de. 94847 pages remaining. 1 workers running.
+/app/node_modules/playwright-core/lib/server/frames.js:392
+    for (const child of frame.childFrames()) this._removeFramesRecursively(child);
+                              ^
+
+TypeError: Cannot read properties of undefined (reading 'childFrames')
+    at FrameManager.removeChildFramesRecursively [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:392:31[90m)[39m
+    at FrameManager.frameCommittedNewDocumentNavigation [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:191:10[90m)[39m
+    at FFPage._onNavigationCommitted [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffPage.js:212:30[90m)[39m
+[90m    at FFSession.emit (node:events:513:28)[39m
+    at [90m/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffConnection.js:248:41
+retry number 5
+previous file count 0
+new file count 0
+
+> playwright-fingerprint-consent@1.0.0 consentscan
+> node consentscan
+
+Found incomplete backup. Restoring backup and continuing crawl from there
+Backups read.
+Pending pages readjusted.
+Restore finished. Restored 5150 results.
+Starting worker 0 for processing page spdns.de. 94849 pages remaining. 1 workers running.
+Starting worker 0 for processing page about.google. 94848 pages remaining. 1 workers running.
+Starting worker 0 for processing page webgo.de. 94847 pages remaining. 1 workers running.
+/app/node_modules/playwright-core/lib/server/frames.js:392
+    for (const child of frame.childFrames()) this._removeFramesRecursively(child);
+                              ^
+
+TypeError: Cannot read properties of undefined (reading 'childFrames')
+    at FrameManager.removeChildFramesRecursively [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:392:31[90m)[39m
+    at FrameManager.frameCommittedNewDocumentNavigation [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/frames.js:191:10[90m)[39m
+    at FFPage._onNavigationCommitted [90m(/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffPage.js:212:30[90m)[39m
+[90m    at FFSession.emit (node:events:513:28)[39m
+    at [90m/app/[39mnode_modules/[4mplaywright-core[24m/lib/server/firefox/ffConnection.js:248:41
+retry number 6
+previous file count 0
+new file count 0
+
+> playwright-fingerprint-consent@1.0.0 consentscan
+> node consentscan
+
+Found incomplete backup. Restoring backup and continuing crawl from there
+Backups read.
+Pending pages readjusted.
+Restore finished. Restored 5150 results.
+Starting worker 0 for processing page spdns.de. 94849 pages remaining. 1 workers running.
+Starting worker 0 for processing page about.google. 94848 pages remaining. 1 workers running.

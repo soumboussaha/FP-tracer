@@ -1,0 +1,15 @@
+[
+  {
+    "sink": "img.src",
+    "taintedStr": "https://[\"hm.baidu.com/hm.gif?hca=B0E01FC3EA1A3DB4&cc=1&ck=1&cl=24-bit&ds=1280x720&vl=720&ep=12546,12546&et=3&ja=0&ln=en-us&lo=0&lt=1680319644&rnd=1451414379&si=d0e33fc3fbfc66c95d9fdcc4c93a8288&v=1.3.0&lv=2&sn=2381&r=0&ww=1280&u=https://www.west.cn/docs/\"]",
+    "args": [
+      ""
+    ],
+    "error": {
+      "stack": "TypeError [ERR_INVALID_URL]: Invalid URL\n    at new NodeError (node:internal/errors:399:5)\n    at Url.parse (node:url:425:17)\n    at Object.urlParse [as parse] (node:url:147:13)\n    at getPayLevelDomainFromUrl (/media/soumaya/9160a940-f8ad-4c42-86d1-a60636730d42/playwright-fingerprint-consent/postprocessing/postprocessingDonothing.js:65:36)\n    at getDestinationHostFromFinding (/media/soumaya/9160a940-f8ad-4c42-86d1-a60636730d42/playwright-fingerprint-consent/postprocessing/postprocessingDonothing.js:317:38)\n    at linesForFlows (/media/soumaya/9160a940-f8ad-4c42-86d1-a60636730d42/playwright-fingerprint-consent/postprocessing/postprocessingDonothing.js:353:37)\n    at /media/soumaya/9160a940-f8ad-4c42-86d1-a60636730d42/playwright-fingerprint-consent/postprocessing/postprocessingDonothing.js:392:42",
+      "input": "https://[\"hm.baidu.com/hm.gif?hca=B0E01FC3EA1A3DB4&cc=1&ck=1&cl=24-bit&ds=1280x720&vl=720&ep=12546,12546&et=3&ja=0&ln=en-us&lo=0&lt=1680319644&rnd=1451414379&si=d0e33fc3fbfc66c95d9fdcc4c93a8288&v=1.3.0&lv=2&sn=2381&r=0&ww=1280&u=https://www.west.cn/docs/\"]",
+      "message": "Invalid URL",
+      "code": "ERR_INVALID_URL"
+    }
+  }
+]
