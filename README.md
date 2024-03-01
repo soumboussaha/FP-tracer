@@ -22,7 +22,7 @@ Requested Badge: **Available**
 We have open-sourced the browser (i.e., extended Foxhound implementation) and the crawler code used in the paper. Additionally, we have made available as a CSV the list of attribute combinations that were detected to be leaked to remote servers and their associated joint entropy and anonymity set. We opted for "available" instead of "reproducible" as a badge to mitigate ethical issues. We did not open-source the dataset used for computing joint entropy values to address ethical concerns, as the dataset comprises real-world browser user fingerprints. Since this aspect of the study is not disclosed, one can reproduce our crawling experiments and reuse the provided entropy CSV file if similar attribute combinations are detected. If new combinations are detected, a dataset of fingerprints would be required to use our methodology to evaluate the detected attribute combination.
 
 ### Security/Privacy Issues and Ethical Concerns
-The dataset used to compute the values is not open-sourced due to its private nature, to avoid ethical concerns.
+The dataset used to compute the joint entropy values is not open-sourced due to its private nature.
 
 ## Basic Requirements
 Depending on the crawl scope, if you run a crawl with a list of a few domains to test the crawler, you won't need much processing power or time. However, crawling 100K domains as we did in the paper would require a few weeks, depending on the processing power of the machine used. For the sake of testing the artifact, using the example list presented for testing is sufficient.
