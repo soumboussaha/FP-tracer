@@ -34,7 +34,7 @@ Depending on the crawl scope, if you run a crawl with a list of a few domains to
 - Install Jupyter Notebook.
 
 ### Estimated Time and Storage Consumption
-The valuation can take 4 to 5 hours.
+The evaluation can take 4 to 5 hours.
 
 ### Accessibility
 The artifact will be maintained through:git@github.com:soumboussaha/FP-tracer.git
