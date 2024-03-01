@@ -1,3 +1,5 @@
 Postprecessing/crawl_results_Donothing/summarizedFlowReport.json filter=lfs diff=lfs merge=lfs -text
 Postprecessing/crawl_results_Donothing/raw_flowreport.csv filter=lfs diff=lfs merge=lfs -text
 Postprecessing/flow_processsed.csv filter=lfs diff=lfs merge=lfs -text
+Postprecessing/crawl_results_Donothing/raw_flowreport.csv.tar.gz filter=lfs diff=lfs merge=lfs -text
+Postprecessing/crawl_results_Donothing/summarizedFlowReport.json.tar.gz filter=lfs diff=lfs merge=lfs -text
