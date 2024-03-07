@@ -289,7 +289,7 @@ for (const page of pages) {
           }
         } else {
           logging.logVerbose(`Writing results to file at ${argv.o}.`)
-          fs.writeJsonSync(argv.o, results);
+          fs.writeJsonSync(argv.o, results, { spaces: 2 });
           console.log(`Write successful`)
           logging.logVerbose(`Removing backup files`)
           const backupFiles = glob.sync(`${argv.o}_*`)
