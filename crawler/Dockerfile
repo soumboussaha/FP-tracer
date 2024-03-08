@@ -38,4 +38,4 @@ RUN npm install
 COPY . .
 
 # entrypoint includes output path, which user can bind to
-ENTRYPOINT ["./runWithAutoRestart.sh", "-o", "output/results.json"]
+ENTRYPOINT ["./runWithAutoRestart.sh"]

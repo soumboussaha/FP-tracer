@@ -40,19 +40,22 @@ The evaluation can take 4 to 5 hours.
 The artifact will be maintained through:git@github.com:soumboussaha/FP-tracer.git
 
 ### Set up the Environment
-Use Linux
-make sure to install nodeJS
-Make sure install firefox .
-we recommend using the provided docker container to run the crawl.
+1. Use Linux
+2. Make sure to install nodeJS
+3. Make sure to install Firefox.
 
-Clone the repo:
+We recommend using the provided docker container to run the crawl. This avoids incompatibilities when using a `libstdc++` that's too new for the provided foxhound version. This would be visible by Foxhound crashing with an error such as:
+>  [pid=433839][err] $HOME/.cache/ms-playwright/firefox-1322/firefox/libstdc++.so.6: version `GLIBCXX_3.4.30' not found (required by /usr/lib/libicuuc.so.74)
+In case you get such an error please proceed by using the docker container.
+
+Clone the repository:
 ```bash
 git clone git@github.com:soumboussaha/FP-tracer.git
 ```
 
 Access the file named crawler.
 
-Go through the provided readme under: /crawler/readme.
+Go through the provided readme under: /crawler/README.md
 
 To install the crawler, run: `npm install`.
 
@@ -65,7 +68,7 @@ npm run consentscan -- --help
 ```
 
 ## Experiments
-Remark: Feel free to modify the content of the exampleURLs file that contains target domains to evaluate other domains.
+Remark: Feel free to modify the content of the exampleURLs file, it contains the target domains for our demo evaluation.
 
 To evaluate the crawler, please run the following experiments per crawling mode:
 
@@ -74,25 +77,25 @@ Step 1: Run Filter crawl.
 
 Duration (30 minutes - 1 hour).
 
-This crawl filters domains that are compatible with consent banner reader, Consent-O-matic. The output is used as a list to be crawled in the measurement crawl to reduce target domains.
+This crawl filters domains that are compatible with consent banner reader, Consent-O-matic. The output is used as a list to be crawled in the measurement crawl to reduce the number of target domains.
 ```bash
 npm run consentscan -- --list exampleURLs -o filter-scan_results.json -c 10 -b 10
 ```
 or
 ```bash
 sudo docker build --tag fingerprint-consent-docker .
-sudo docker run -it -v "$(pwd)/output:/app/output" fingerprint-consent-docker --list exampleURLs -c 10 -b 10
+sudo docker run -it -v "$(pwd)/output:/app/output" fingerprint-consent-docker --list exampleURLs -o output/filter-scan_results.json -c 10 -b 10
 ```
 
-Step 3: Visualize results.
+Step 3: Visualizing the results.
 Open the output file: filter-scan_results.json. Marked domains as non-compatible with Consent-O-Matic are detailed.
 
 Step 4: Visualize the crawl of the paper (optional).
 Exit the crawler directory. Go to file /Postprocessing/crawl_results_filter/. crawl_results_filter/results.json - the main results file from the filter crawl.
-By running FilterCrawlAnalysis.ipynb, you will display:
-- Get statistics.
-- Generate graphs.
-- Generate an input list for measurement crawl used in the consent banner crawl of the paper.
+By running FilterCrawlAnalysis.ipynb, you will:
+- Calculate general statistics about the crawl.
+- Generate various graphs.
+- Generate an input list for the measurement crawl used in the consent banner crawl experiment of the paper.
 
 ### Experiment 2:
 Duration (30 minutes - 2 hours).

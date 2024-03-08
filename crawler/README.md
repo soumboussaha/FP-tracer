@@ -2,14 +2,14 @@
 
 # playwright-fingerprint-consent
 
-A node-js script for automating crawls for collecting data about consent prompts and browser fingerprinting using playwright.
+A NodeJS script for automating crawls for collecting data about consent prompts and browser fingerprinting using playwright.
 
 Created for the master's thesis *The Impact of User Consent on Browser Fingerprinting*.
 
 ## General Information
 
 ### Prerequisites
-1. Install Linux (this script is currently only running on linux, because it assumes a linux-filesystem)
+1. Install Linux (this script is currently only running on Linux, because it assumes a Linux-like Filesystem)
 1. Install NodeJS
 1. Install Firefox
 
@@ -99,7 +99,7 @@ sudo docker run -v "$(pwd)/output:/app/output" fingerprint-consent-docker  -u h-
 
 Crawling the example list with 5 workers and backups after every 3 sites
 ```
-sudo docker run -v "$(pwd)/output:/app/output" fingerprint-consent-docker  -l exampleURLs -c 5 -b 3
+sudo docker run -v "$(pwd)/output:/app/output" fingerprint-consent-docker -o output/results.json -l exampleURLs -c 5 -b 3
 ```
 
 
@@ -125,7 +125,7 @@ This will crawl all 100k pages. It will use `10` workers (`-c`) and do a backup 
 
 **Warning:** If you increase the concurrency by to much, some websites might not be reachable because of missing resources.
 No specific error messages will be generated in this case, making this problem hard to recognize.
-On a simple dev machine, 10 workers were running fine.
+On a simple development machine, 10 workers were running fine.
 
 #### Docker Instructions
 
@@ -138,10 +138,9 @@ sudo docker build --tag fingerprint-consent-docker .
 
 Then run the modified command
 ```
-sudo docker run -it -v "$(pwd)/output:/app/output" fingerprint-consent-docker --list tranco/tranco_top-100k_N7QVW_2022-10-07 -c 10 -b 10
+sudo docker run -it -v "$(pwd)/output:/app/output" fingerprint-consent-docker --list tranco/tranco_top-100k_N7QVW_2022-10-07 -o output/tranco-top100k_filter-scan_results.json -c 10 -b 10
 ```
 
-The results-file will just be named `results.json` in this case. You cannot specify another name.
 Backup and recovery will still work.
 
 In a local test, 10 pages required about 40s of crawling time.
@@ -161,7 +160,7 @@ sudo docker build --tag fingerprint-consent-docker .
 
 Then run the modified command
 ```
-sudo docker run -it -v "$(pwd)/output:/app/output" fingerprint-consent-docker -m fingerprinting -l tranco/tranco_top-100k_N7QVW_2022-10-07_with_cmp -c 12 -b 10 -x
+sudo docker run -it -v "$(pwd)/output:/app/output" fingerprint-consent-docker -m fingerprinting -l tranco/tranco_top-100k_N7QVW_2022-10-07_with_cmp -o output/results.json -c 12 -b 10 -x
 ```
 
 A few notes about the used flags:
@@ -171,6 +170,7 @@ A few notes about the used flags:
 - `-b 10` is the number of results per backup file. `10` should be fine
 - `-x` will cause the backup files not to be joined in the end. furthermore, the RAM will be cleared once results are written to backup files. this flag should be set because of the higher amount of data in the fingerprinting crawl
 - `-l tranco/tranco_top-100k_N7QVW_2022-10-07_with_cmp` is the list of domains for the main crawl. It was created by evaluating the results from the first filter crawl
+- `-o output/results.json` Sets the location of the file to store the results.
 
 ### Donothing Crawl ( simple crawl without accounting for consent banners ) 
 
@@ -185,16 +185,17 @@ sudo docker build --tag fingerprint-consent-docker .
 
 Then run the modified command
 ```
-sudo docker run -it -v "$(pwd)/output:/app/output" fingerprint-consent-docker -m donothing -l tranco/tranco_top-100k_N7QVW_2022-10-07 -c 12 -b 10 -x
+sudo docker run -it -v "$(pwd)/output:/app/output" fingerprint-consent-docker -m donothing -l tranco/tranco_top-100k_N7QVW_2022-10-07 -o output/results.json -c 12 -b 10 -x
 ```
 
 A few notes about the used flags:
 
 - `-m donothing` specifies that the fingerprinting/main crawls should be executed; not the filter-crawl again
-- `-c 12` is the concurrency / number of workers. It can prbably be set to slightly below the number of cores
+- `-c 12` is the concurrency / number of workers. It can probably be set to slightly below the number of cores
 - `-b 10` is the number of results per backup file. `10` should be fine
 - `-x` will cause the backup files not to be joined in the end. furthermore, the RAM will be cleared once results are written to backup files. this flag should be set because of the higher amount of data in the fingerprinting crawl
 - `-l tranco/tranco_top-100k_N7QVW_2022-10-07` is the list of domains for the main crawl. this is the initial list and does not require a prior crawl
+- `-o output/results.json` Sets the location of the file to store the results.
 
 ### Postprocessing
 

@@ -84,7 +84,7 @@ const trimchar = (str, char) => {
     }
 
     console.log('Writing worker report')
-    fs.writeJSONSync(path.join(workerStatusReportDir, 'workerStatusReport.json'), workerReport)
+    fs.writeJSONSync(path.join(workerStatusReportDir, 'workerStatusReport.json'), workerReport, { spaces: 2 })
 
 
 
@@ -127,7 +127,7 @@ const trimchar = (str, char) => {
                     // Remove duplicate from its output file
                     let duplicateFileLocation = path.join(duplicate.hasErrors ? withErrorDir : withoutErrorDir, duplicate.originalFile)
                     let duplicateOutputFile = fs.readJSONSync(duplicateFileLocation)
-                    fs.writeJSONSync(duplicateFileLocation, duplicateOutputFile.filter(e => e.domain !== duplicate.domain))
+                    fs.writeJSONSync(duplicateFileLocation, duplicateOutputFile.filter(e => e.domain !== duplicate.domain), { spaces: 2 })
                 } else {
                     console.log(`Both with error. Duplicate newer. Keeping duplicate.`)
                     continue
@@ -183,17 +183,17 @@ const trimchar = (str, char) => {
 
         if (withoutError.length > 0) {
             console.log(`Writing results without error to ${path.join(withoutErrorDir, basename)}`)
-            fs.writeJSONSync(path.join(withoutErrorDir, basename), withoutError)
+            fs.writeJSONSync(path.join(withoutErrorDir, basename), withoutError, { spaces: 2 })
         }
 
         if (withError.length > 0) {
             console.log(`Writing results with error to ${path.join(withErrorDir, basename)}`)
-            fs.writeJSONSync(path.join(withErrorDir, basename), withError)
+            fs.writeJSONSync(path.join(withErrorDir, basename), withError, { spaces: 2 })
         }
     }
 
     console.log('Writing status report')
-    fs.writeJSONSync(path.join(reportDir, 'statusReport.json'), statusReport)
+    fs.writeJSONSync(path.join(reportDir, 'statusReport.json'), statusReport, { spaces: 2 })
 
     console.log('Writing skipped domain list')
     fs.writeFileSync(path.join(reportDir, 'skippedDomains'), skippedDomains.join('\n'))
@@ -360,7 +360,7 @@ const trimchar = (str, char) => {
     }
 
     console.log(`Writing summarizedFlowReport.json`)
-    fs.writeJSONSync(path.join(summaryDir, 'summarizedFlowReport.json'), summarizedFlowReport);
+    fs.writeJSONSync(path.join(summaryDir, 'summarizedFlowReport.json'), summarizedFlowReport, { spaces: 2 });
 
     // Currently causes nodejs dump due to garbage colllection error
     // (async () => {
