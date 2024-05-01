@@ -25,12 +25,13 @@ We have open-sourced the browser (i.e., extended Foxhound implementation) and th
 The dataset used to compute the joint entropy values is not open-sourced due to its private nature.
 
 ## Basic Requirements
-we recomend using an Ubuntu VM . the machine used on our end is an ubuntu machine of kernel verion  5.4.0-144-generic 
+we recommend using an Ubuntu VM. The machine used on our end is an Ubuntu machine of kernel verion  5.4.0-144-generic 
 
-Depending on the crawl scope, if you run a crawl with a list of a few domains to test the crawler, you won't need much processing power or time. However, crawling 100K domains as we did in the paper would require a few weeks, depending on the processing power of the machine used. For the sake of testing the artifact, using the example list presented for testing is sufficient.
+Depending on the crawl scope, if you run a crawl with a list of a few domains to test the crawler, you won't need much processing power or time. However, crawling 100K domains as we did in the paper would require a few weeks, depending on the processing power of the machine used. 
+For the sake of testing the artifact, using the example list presented for testing is sufficient.
 
 ### Software Requirements and Set up the Environment
-- we recommend using an Ubuntu VM. the machine used on our end is an ubuntu 20.04 machine of kernel verion  5.4.0-144-generic.
+- we recommend using an Ubuntu VM. The machine used on our end is an Ubuntu 20.04 machine of kernel verion  5.4.0-144-generic.
 - Install NodeJS ( recommend verion is v18.17.1).
 - Install Firefox (recommended verion is  Mozilla Firefox 124.0.2)
 - Install Python 3 . you can run :
@@ -38,7 +39,7 @@ Depending on the crawl scope, if you run a crawl with a list of a few domains to
 sudo apt install python3 python3-pip
 ```
 - Install git.
-- Install Jupyter Notebook (recomended verion is 6.5.3).
+- Install Jupyter Notebook (recommended verion is 6.5.3).
 - Install necessary libraries to run python scripts jupyter notebook: pandas matplotlib numpy seaborn jenkspy .
 you can run :
 
@@ -55,7 +56,7 @@ The artifact will be maintained through:git@github.com:soumboussaha/FP-tracer.gi
 ## Experiments
 
 
-When runing the crawler optional we recommend using the provided docker container to run the crawl. This avoids incompatibilities when using a `libstdc++` that's too new for the provided foxhound version. This would be visible by Foxhound crashing with an error such as:
+When running the crawler optional we recommend using the provided docker container to run the crawl. This avoids incompatibilities when using a `libstdc++` that's too new for the provided foxhound version. This would be visible by Foxhound crashing with an error such as:
 >  [pid=433839][err] $HOME/.cache/ms-playwright/firefox-1322/firefox/libstdc++.so.6: version `GLIBCXX_3.4.30' not found (required by /usr/lib/libicuuc.so.74)
 In case you get such an error please proceed by using the docker container.
 
@@ -66,7 +67,7 @@ git clone git@github.com:soumboussaha/FP-tracer.git
 
 Access the file named crawler.
 
-Go through the provided readme under: /crawler/README.md
+Go through the provided readme under/crawler/README.md
 
 To install the crawler, run: `npm install`.
 
@@ -87,24 +88,21 @@ Step 1: Run Filter crawl.
 
 Duration (30 minutes - 1 hour).
 
-This crawl filters domains that are compatible with consent banner reader, Consent-O-matic. 
+This crawl filters domains that are compatible with the consent banner reader, Consent-O-Matic. 
 ```bash
 sudo docker build --tag fingerprint-consent-docker .
-sudo docker run -it  -v "$(pwd)/output:/app/output" fingerprint-consent-docker --list exampleURLs  -c 10 -b 10 -x 
+sudo docker run -it  -v "$(pwd)/output:/app/output" fingerprint-consent-docker --list exampleURLs   -c 10 -b 10 -x 
 ```
 
-The output of this crawl labels the domains based on the compatibility of the consent banner with consent-O-matic.
-This crawl was used to reduce the number of target domains to only the one that have a compatible consent banner .
+The output of this crawl labels the domains based on the compatibility of the consent banner with consent-O-Matic.
 
-After running the previous command the results are printed both at the consol and in the chosedn output file . 
-
-this command can also be run for one domain rather then a list . 
-for that you can run :
+this command can also be run for one domain rather than a list. 
+for that, you can run :
 ```bash
 sudo docker run -v "$(pwd)/output:/app/output" fingerprint-consent-docker  -u google.com
 ```
 
-you should see the follwing output 
+you should see the following output 
 ```bash
 Starting worker 0 for processing page google.com. 0 pages in queue. 1 workers running.
 No more pages available. Worker 0 will no longer be started.  0 workers remaining.
@@ -123,7 +121,7 @@ No more pages available. Worker 0 will no longer be started.  0 workers remainin
 
 ```
 
-hasBanner output field indicates wether the consent banner exist and as you can see for google.com the banner was detected succefully.
+hasBanner output field indicates whether the consent banner is detectable by consent-O-Matic.  For google.com the banner was detected successfully in the previous example.
 
 
 ### Experiment 2:
