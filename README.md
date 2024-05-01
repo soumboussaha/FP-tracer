@@ -25,13 +25,26 @@ We have open-sourced the browser (i.e., extended Foxhound implementation) and th
 The dataset used to compute the joint entropy values is not open-sourced due to its private nature.
 
 ## Basic Requirements
+we recomend using an Ubuntu VM . the machine used on our end is an ubuntu machine of kernel verion  5.4.0-144-generic 
+
 Depending on the crawl scope, if you run a crawl with a list of a few domains to test the crawler, you won't need much processing power or time. However, crawling 100K domains as we did in the paper would require a few weeks, depending on the processing power of the machine used. For the sake of testing the artifact, using the example list presented for testing is sufficient.
 
-### Software Requirements
-- Install Linux (this script currently only runs on Linux because it assumes a Linux filesystem).
-- Install NodeJS.
-- Install Firefox.
-- Install Jupyter Notebook.
+### Software Requirements and Set up the Environment
+- we recommend using an Ubuntu VM. the machine used on our end is an ubuntu 20.04 machine of kernel verion  5.4.0-144-generic.
+- Install NodeJS ( recommend verion is v18.17.1).
+- Install Firefox (recommended verion is  Mozilla Firefox 124.0.2)
+- Install Python 3 . you can run :
+```bash
+sudo apt install python3 python3-pip
+```
+- Install git.
+- Install Jupyter Notebook (recomended verion is 6.5.3).
+- Install necessary libraries to run python scripts jupyter notebook: pandas matplotlib numpy seaborn jenkspy .
+you can run :
+
+```bash
+pip3 install pandas matplotlib numpy seaborn jenkspy
+```
 
 ### Estimated Time and Storage Consumption
 The evaluation can take 4 to 5 hours.
@@ -39,12 +52,10 @@ The evaluation can take 4 to 5 hours.
 ### Accessibility
 The artifact will be maintained through:git@github.com:soumboussaha/FP-tracer.git
 
-### Set up the Environment
-1. Use Linux
-2. Make sure to install nodeJS
-3. Make sure to install Firefox.
+## Experiments
 
-We recommend using the provided docker container to run the crawl. This avoids incompatibilities when using a `libstdc++` that's too new for the provided foxhound version. This would be visible by Foxhound crashing with an error such as:
+
+When runing the crawler optional we recommend using the provided docker container to run the crawl. This avoids incompatibilities when using a `libstdc++` that's too new for the provided foxhound version. This would be visible by Foxhound crashing with an error such as:
 >  [pid=433839][err] $HOME/.cache/ms-playwright/firefox-1322/firefox/libstdc++.so.6: version `GLIBCXX_3.4.30' not found (required by /usr/lib/libicuuc.so.74)
 In case you get such an error please proceed by using the docker container.
 
@@ -67,7 +78,6 @@ Display help to ensure the crawler is installed:
 npm run consentscan -- --help
 ```
 
-## Experiments
 Remark: Feel free to modify the content of the exampleURLs file, it contains the target domains for our demo evaluation.
 
 To evaluate the crawler, please run the following experiments per crawling mode:
@@ -77,51 +87,65 @@ Step 1: Run Filter crawl.
 
 Duration (30 minutes - 1 hour).
 
-This crawl filters domains that are compatible with consent banner reader, Consent-O-matic. The output is used as a list to be crawled in the measurement crawl to reduce the number of target domains.
-```bash
-npm run consentscan -- --list exampleURLs -o filter-scan_results.json -c 10 -b 10
-```
-or
+This crawl filters domains that are compatible with consent banner reader, Consent-O-matic. 
 ```bash
 sudo docker build --tag fingerprint-consent-docker .
-sudo docker run -it -v "$(pwd)/output:/app/output" fingerprint-consent-docker --list exampleURLs -o output/filter-scan_results.json -c 10 -b 10
+sudo docker run -it  -v "$(pwd)/output:/app/output" fingerprint-consent-docker --list exampleURLs  -c 10 -b 10 -x 
 ```
 
-Step 3: Visualizing the results.
-Open the output file: filter-scan_results.json. Marked domains as non-compatible with Consent-O-Matic are detailed.
+The output of this crawl labels the domains based on the compatibility of the consent banner with consent-O-matic.
+This crawl was used to reduce the number of target domains to only the one that have a compatible consent banner .
 
-Step 4: Visualize the crawl of the paper (optional).
-Exit the crawler directory. Go to file /Postprocessing/crawl_results_filter/. crawl_results_filter/results.json - the main results file from the filter crawl.
-By running FilterCrawlAnalysis.ipynb, you will:
-- Calculate general statistics about the crawl.
-- Generate various graphs.
-- Generate an input list for the measurement crawl used in the consent banner crawl experiment of the paper.
+After running the previous command the results are printed both at the consol and in the chosedn output file . 
+
+this command can also be run for one domain rather then a list . 
+for that you can run :
+```bash
+sudo docker run -v "$(pwd)/output:/app/output" fingerprint-consent-docker  -u google.com
+```
+
+you should see the follwing output 
+```bash
+Starting worker 0 for processing page google.com. 0 pages in queue. 1 workers running.
+No more pages available. Worker 0 will no longer be started.  0 workers remaining.
+[
+  {
+    domain: 'google.com',
+    usedUrl: 'https://google.com',
+    fullUrl: 'https://www.google.com/',
+    hasBanner: true,
+    cmp: 'google_popup',
+    error: undefined,
+    start: '2024-05-01T18:54:26.508Z',
+    end: '2024-05-01T18:54:32.399Z'
+  }
+]
+
+```
+
+hasBanner output field indicates wether the consent banner exist and as you can see for google.com the banner was detected succefully.
+
 
 ### Experiment 2:
 Duration (30 minutes - 2 hours).
 
 Step 1: Run Measurement Crawl.
 
-This crawler logs the fingerprinting flows of targeted domains and interacts in 3 ways with consent banners while logging the behavior. To run the crawl:
+This crawler logs the fingerprinting flows of targeted domains and interacts in 3 ways with consent banners while logging the behavior. To run the crawl with a list :
 ```bash
 sudo docker build --tag fingerprint-consent-docker .
-sudo docker run -it -v "$(pwd)/output:/app/output" fingerprint-consent-docker -m fingerprinting -l exampleURLs -c 12 -b 10 -x
+sudo docker run -it  -v "$(pwd)/output:/app/output" fingerprint-consent-docker -m fingerprinting --list exampleURLs  -c 10 -b 10 -x 
 ```
-
-Step 2: Run post-processing.
-
-Put all files into the post-processing input folders. Put the result files into post-processing/00_raw/. The result files are those files containing the actual crawl data and will usually have a name starting with results_.
-Optional: Put the worker status files into post-processing/50_worker-status_raw/. Worker status files have a name starting with workerStatus_ followed by a UNIX timestamp. Other files like logs and the currentWorkerStatus.json file are not part of the post-processing procedure.
-Run:
+To run the crawl with one single domain :
 ```bash
-npm run postprocessing
+sudo docker run -v "$(pwd)/output:/app/output" fingerprint-consent-docker  -m fingerprinting -o output/results.json -u google.com
 ```
 
-New folders with the output files will appear. Open the file to find the summarized reports in JSON:
-- SummarizedFlowReport.json contains the flows detected from each source to sink.
-- statusReport.json contains the output of crawling each domain (if it was reachable, unreachable, or any other specific errors).
+if the crawl runs succefully you will see printed to the console the detected fingerprinting attributes leaked when crawling the domain in 3 diffirent modes : by ignoring the consent banner , accepting the consent banner and rejecting the consent banner. 
 
-Step 3 (optional):
+the logs of the crawl will be saved in the indicated location with -O option in this case you can open output/results.json to see the logs of the crawl .
+
+Step 2 (optional):
 
 Go to file /Postprocessing/crawl_results_fingerprinting/. You will find the files of the crawl conducted in the paper related to the measurement crawl. To visualize them, run the Jupyter Notebook named FingerprintingCrawlAnalysis.ipynb. This step is marked as optional; other tools can be used to visualize and process the reports. We include these for the sake of example.
 
@@ -132,25 +156,23 @@ Step 1: Run Do nothing crawl.
 
 This crawling mode does not interact with the consent banner and simply visits the domain pages while logging fingerprinting flows.
 ```bash
-sudo docker build --tag fingerprint-consent-docker .
-sudo docker run -it -v "$(pwd)/output:/app/output" fingerprint-consent-docker -m donothing -l exampleURLs -c 12 -b 10 -x
+sudo docker run -v "$(pwd)/output:/app/output" fingerprint-consent-docker  -m donothing --list exampleURLs  -c 10 -b 10 -x
 ```
-
-Step 2: Put all files into the post-processing input folders. Put the result files into post-processing/00_raw/. The result files are those files containing the actual crawl data and will usually have a name starting with results_. Optional: Put the worker status files into post-processing/50_worker-status_raw/. Worker status files have a name starting with workerStatus_ followed by a UNIX timestamp. Other files like logs and the currentWorkerStatus.json file are not part of the post-processing procedure.
-To run the post-processing script specific to this mode, run:
+To run the crawl with one single domain :
 ```bash
-npm run DonothingPost
+sudo docker run -v "$(pwd)/output:/app/output" fingerprint-consent-docker -m donothing -o output/results.json -u google.com
 ```
+you will see the output of the crawl summary displayed in the console.
+the logs of the crawl will be saved in the indicated location with -O option in this case you can open output/results.json to see the logs of the crawl . 
 
-New folders with the output files will appear. Open the file to find the summarized reports in JSON:
-- SummarizedFlowReport.json contains the flows detected from each source to sink.
-- statusReport.json contains the output of crawling each domain (if it was reachable, unreachable, or any other specific errors).
 
-Step 3 (optional):
+Step 2 (optional):
 
-For this step, first, you have to get the large files in /Largefiles/, unzip them, and then copy them to /Postprocessing/crawl_results_Donothing/. You will find the files of the crawl conducted in the paper related to the simple large-scale crawl without the consent banner. 
+For this step, first, you have to go back to the root of the cloned repo . you can go to the the directory : /Largefiles/ . here you have large files that contain the postprocessed data from the crawl presented in the paper, unzip the files, then copy them to /Postprocessing/crawl_results_Donothing/. 
 
-To visualize them, run the Jupyter Notebook named Donothing.ipynb, under /Postprocessing. This step is marked as optional; other tools can be used to visualize and process the reports. We include these for the sake of example.
+To visualize them, run the Jupyter Notebook named Donothing.ipynb, under /Postprocessing. 
+
+This step is marked as optional; other tools can be used to visualize and process the reports. We include these for the sake of example, also to provide an easy way to check our crawl results presented in the paper. 
 
 ### Main Results and Claims
 
