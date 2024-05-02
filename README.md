@@ -34,13 +34,13 @@ For the sake of testing the artifact, using the example list presented for testi
 - we recommend using an Ubuntu VM. The machine used on our end is an Ubuntu 20.04 machine of kernel verion  5.4.0-144-generic.
 - Install NodeJS ( recommend verion is v18.17.1).
 - Install Firefox (recommended verion is  Mozilla Firefox 124.0.2)
-- Install Python 3 . you can run :
+- Install Python 3 ( recommended version is Python 3.11.4) . you can run :
 ```bash
 sudo apt install python3 python3-pip
 ```
 - Install git.
 - Install Jupyter Notebook (recommended verion is 6.5.3).
-- Install necessary libraries to run python scripts jupyter notebook: pandas matplotlib numpy seaborn jenkspy .
+- Install necessary libraries to run Python scripts jupyter notebook: pandas matplotlib numpy seaborn jenkspy .
 you can run :
 
 ```bash
