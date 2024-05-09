@@ -137,7 +137,7 @@ doManualScan = async (domain, worker = undefined) => {
         currentPage.actualUrl = await page.url()
 
         logging.logAlways('40s timeout starting now', worker)
-        await new Promise(resolve => setTimeout(resolve, 40000))
+        await new Promise(resolve => setTimeout(resolve, 80000))
         logging.logAlways('Timeout finished', worker)
 
         await managedBrowser.closeContext()
