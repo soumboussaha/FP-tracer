@@ -91,7 +91,7 @@ Duration (30 minutes - 1 hour).
 This crawl filters domains that are compatible with the consent banner reader, Consent-O-Matic. 
 ```bash
 sudo docker build --tag fingerprint-consent-docker .
-sudo docker run -it  -v "$(pwd)/output:/app/output" fingerprint-consent-docker --list exampleURLs   -c 10 -b 10 -x 
+sudo docker run -it  -v "$(pwd)/output:/app/output" fingerprint-consent-docker --list exampleURLs   -c 4 -b 3 -x 
 ```
 
 The output of this crawl labels the domains based on the compatibility of the consent banner with consent-O-Matic.
@@ -132,7 +132,7 @@ Step 1: Run Measurement Crawl.
 This crawler logs the fingerprinting flows of targeted domains and interacts in 3 ways with consent banners while logging the behavior. To run the crawl with a list :
 ```bash
 sudo docker build --tag fingerprint-consent-docker .
-sudo docker run -it  -v "$(pwd)/output:/app/output" fingerprint-consent-docker -m fingerprinting --list exampleURLs  -c 10 -b 10 -x 
+sudo docker run -it  -v "$(pwd)/output:/app/output" fingerprint-consent-docker -m fingerprinting --list exampleURLs  -c 4 -b 3 -x 
 ```
 To run the crawl with one single domain :
 ```bash
@@ -154,7 +154,7 @@ Step 1: Run Do nothing crawl.
 
 This crawling mode does not interact with the consent banner and simply visits the domain pages while logging fingerprinting flows.
 ```bash
-sudo docker run -v "$(pwd)/output:/app/output" fingerprint-consent-docker  -m donothing --list exampleURLs  -c 10 -b 10 -x
+sudo docker run -v "$(pwd)/output:/app/output" fingerprint-consent-docker  -m donothing --list exampleURLs  -c 4 -b 3 -x
 ```
 To run the crawl with one single domain :
 ```bash
